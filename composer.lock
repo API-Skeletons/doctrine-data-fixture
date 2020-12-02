@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "13f11c758572985570131d279b9b5a3e",
+    "content-hash": "98d9bb57b4415e6f0bfd13ee8c853dad",
     "packages": [
         {
             "name": "container-interop/container-interop",
@@ -35,21 +35,25 @@
             ],
             "description": "Promoting the interoperability of container objects (DIC, SL, etc.)",
             "homepage": "https://github.com/container-interop/container-interop",
+            "support": {
+                "issues": "https://github.com/container-interop/container-interop/issues",
+                "source": "https://github.com/container-interop/container-interop/tree/master"
+            },
             "abandoned": "psr/container",
             "time": "2017-02-14T19:40:03+00:00"
         },
         {
             "name": "doctrine/annotations",
-            "version": "1.10.3",
+            "version": "1.11.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/annotations.git",
-                "reference": "5db60a4969eba0e0c197a19c077780aadbc43c5d"
+                "reference": "ce77a7ba1770462cd705a91a151b6c3746f9c6ad"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/annotations/zipball/5db60a4969eba0e0c197a19c077780aadbc43c5d",
-                "reference": "5db60a4969eba0e0c197a19c077780aadbc43c5d",
+                "url": "https://api.github.com/repos/doctrine/annotations/zipball/ce77a7ba1770462cd705a91a151b6c3746f9c6ad",
+                "reference": "ce77a7ba1770462cd705a91a151b6c3746f9c6ad",
                 "shasum": ""
             },
             "require": {
@@ -59,12 +63,14 @@
             },
             "require-dev": {
                 "doctrine/cache": "1.*",
-                "phpunit/phpunit": "^7.5"
+                "doctrine/coding-standard": "^6.0 || ^8.1",
+                "phpstan/phpstan": "^0.12.20",
+                "phpunit/phpunit": "^7.5 || ^9.1.5"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.9.x-dev"
+                    "dev-master": "1.11.x-dev"
                 }
             },
             "autoload": {
@@ -99,13 +105,17 @@
                 }
             ],
             "description": "Docblock Annotations Parser",
-            "homepage": "http://www.doctrine-project.org",
+            "homepage": "https://www.doctrine-project.org/projects/annotations.html",
             "keywords": [
                 "annotations",
                 "docblock",
                 "parser"
             ],
-            "time": "2020-05-25T17:24:27+00:00"
+            "support": {
+                "issues": "https://github.com/doctrine/annotations/issues",
+                "source": "https://github.com/doctrine/annotations/tree/1.11.1"
+            },
+            "time": "2020-10-26T10:28:16+00:00"
         },
         {
             "name": "doctrine/cache",
@@ -187,6 +197,10 @@
                 "redis",
                 "xcache"
             ],
+            "support": {
+                "issues": "https://github.com/doctrine/cache/issues",
+                "source": "https://github.com/doctrine/cache/tree/1.10.x"
+            },
             "funding": [
                 {
                     "url": "https://www.doctrine-project.org/sponsorship.html",
@@ -205,16 +219,16 @@
         },
         {
             "name": "doctrine/collections",
-            "version": "1.6.6",
+            "version": "1.6.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/collections.git",
-                "reference": "5f0470363ff042d0057006ae7acabc5d7b5252d5"
+                "reference": "55f8b799269a1a472457bd1a41b4f379d4cfba4a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/collections/zipball/5f0470363ff042d0057006ae7acabc5d7b5252d5",
-                "reference": "5f0470363ff042d0057006ae7acabc5d7b5252d5",
+                "url": "https://api.github.com/repos/doctrine/collections/zipball/55f8b799269a1a472457bd1a41b4f379d4cfba4a",
+                "reference": "55f8b799269a1a472457bd1a41b4f379d4cfba4a",
                 "shasum": ""
             },
             "require": {
@@ -266,21 +280,11 @@
                 "iterators",
                 "php"
             ],
-            "funding": [
-                {
-                    "url": "https://www.doctrine-project.org/sponsorship.html",
-                    "type": "custom"
-                },
-                {
-                    "url": "https://www.patreon.com/phpdoctrine",
-                    "type": "patreon"
-                },
-                {
-                    "url": "https://tidelift.com/funding/github/packagist/doctrine%2Fcollections",
-                    "type": "tidelift"
-                }
-            ],
-            "time": "2020-06-22T19:14:02+00:00"
+            "support": {
+                "issues": "https://github.com/doctrine/collections/issues",
+                "source": "https://github.com/doctrine/collections/tree/1.6.7"
+            },
+            "time": "2020-07-27T17:53:49+00:00"
         },
         {
             "name": "doctrine/common",
@@ -363,6 +367,10 @@
                 "doctrine",
                 "php"
             ],
+            "support": {
+                "issues": "https://github.com/doctrine/common/issues",
+                "source": "https://github.com/doctrine/common/tree/2.13.x"
+            },
             "funding": [
                 {
                     "url": "https://www.doctrine-project.org/sponsorship.html",
@@ -381,36 +389,35 @@
         },
         {
             "name": "doctrine/data-fixtures",
-            "version": "1.4.3",
+            "version": "1.4.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/data-fixtures.git",
-                "reference": "7ebac50901eb4516816ac39100dba1759d843943"
+                "reference": "16a03fadb5473f49aad70384002dfd5012fe680e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/data-fixtures/zipball/7ebac50901eb4516816ac39100dba1759d843943",
-                "reference": "7ebac50901eb4516816ac39100dba1759d843943",
+                "url": "https://api.github.com/repos/doctrine/data-fixtures/zipball/16a03fadb5473f49aad70384002dfd5012fe680e",
+                "reference": "16a03fadb5473f49aad70384002dfd5012fe680e",
                 "shasum": ""
             },
             "require": {
-                "doctrine/common": "^2.11",
-                "doctrine/persistence": "^1.3.3",
+                "doctrine/common": "^2.13|^3.0",
+                "doctrine/persistence": "^1.3.3|^2.0",
                 "php": "^7.2 || ^8.0"
             },
             "conflict": {
                 "doctrine/phpcr-odm": "<1.3.0"
             },
             "require-dev": {
-                "alcaeus/mongo-php-adapter": "^1.1",
                 "doctrine/coding-standard": "^6.0",
                 "doctrine/dbal": "^2.5.4",
-                "doctrine/mongodb-odm": "^1.3.0",
+                "doctrine/mongodb-odm": "^1.3.0 || ^2.0.0",
                 "doctrine/orm": "^2.7.0",
                 "phpunit/phpunit": "^7.0"
             },
             "suggest": {
-                "alcaeus/mongo-php-adapter": "For using MongoDB ODM with PHP 7",
+                "alcaeus/mongo-php-adapter": "For using MongoDB ODM 1.3 with PHP 7 (deprecated)",
                 "doctrine/mongodb-odm": "For loading MongoDB ODM fixtures",
                 "doctrine/orm": "For loading ORM fixtures",
                 "doctrine/phpcr-odm": "For loading PHPCR ODM fixtures"
@@ -441,6 +448,10 @@
             "keywords": [
                 "database"
             ],
+            "support": {
+                "issues": "https://github.com/doctrine/data-fixtures/issues",
+                "source": "https://github.com/doctrine/data-fixtures/tree/1.4.x"
+            },
             "funding": [
                 {
                     "url": "https://www.doctrine-project.org/sponsorship.html",
@@ -455,24 +466,26 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-05-25T19:45:03+00:00"
+            "time": "2020-09-01T07:13:28+00:00"
         },
         {
             "name": "doctrine/doctrine-laminas-hydrator",
-            "version": "2.0.2",
+            "version": "2.0.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/doctrine-laminas-hydrator.git",
-                "reference": "d1cc845e4755f691880133736742b42a3fa564d0"
+                "reference": "f252aa852283f7a57b46da84b3fed071c9e18eec"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/doctrine-laminas-hydrator/zipball/d1cc845e4755f691880133736742b42a3fa564d0",
-                "reference": "d1cc845e4755f691880133736742b42a3fa564d0",
+                "url": "https://api.github.com/repos/doctrine/doctrine-laminas-hydrator/zipball/f252aa852283f7a57b46da84b3fed071c9e18eec",
+                "reference": "f252aa852283f7a57b46da84b3fed071c9e18eec",
                 "shasum": ""
             },
             "require": {
-                "doctrine/common": "^2.10",
+                "doctrine/collections": "^1.6.5",
+                "doctrine/inflector": "^1.4.3 || ^2.0.3",
+                "doctrine/persistence": "^1.3.7 || ^2.0.0",
                 "ext-ctype": "*",
                 "laminas/laminas-hydrator": "^3.0.2",
                 "laminas/laminas-stdlib": "^3.2.1",
@@ -507,20 +520,39 @@
                 "laminas",
                 "zf"
             ],
-            "time": "2020-02-05T17:19:53+00:00"
+            "support": {
+                "issues": "https://github.com/doctrine/doctrine-laminas-hydrator/issues",
+                "rss": "https://github.com/doctrine/doctrine-laminas-hydrator/releases.atom",
+                "source": "https://github.com/doctrine/doctrine-laminas-hydrator"
+            },
+            "funding": [
+                {
+                    "url": "https://www.doctrine-project.org/sponsorship.html",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://www.patreon.com/phpdoctrine",
+                    "type": "patreon"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/doctrine%2Fdoctrine-laminas-hydrator",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2020-07-31T21:59:40+00:00"
         },
         {
             "name": "doctrine/doctrine-module",
-            "version": "4.0.2",
+            "version": "4.0.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/DoctrineModule.git",
-                "reference": "6b13045c2bd70e73d1b9497ef64b66f6abeec1ec"
+                "reference": "48b5d77a140c3c3442ac51c391e40e37cba72e24"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/DoctrineModule/zipball/6b13045c2bd70e73d1b9497ef64b66f6abeec1ec",
-                "reference": "6b13045c2bd70e73d1b9497ef64b66f6abeec1ec",
+                "url": "https://api.github.com/repos/doctrine/DoctrineModule/zipball/48b5d77a140c3c3442ac51c391e40e37cba72e24",
+                "reference": "48b5d77a140c3c3442ac51c391e40e37cba72e24",
                 "shasum": ""
             },
             "require": {
@@ -541,7 +573,7 @@
                 "symfony/console": "^5.0"
             },
             "require-dev": {
-                "doctrine/coding-standard": "^7.0",
+                "doctrine/coding-standard": "^8.2",
                 "laminas/laminas-i18n": "^2.7",
                 "laminas/laminas-log": "^2.9",
                 "laminas/laminas-modulemanager": "^2.8",
@@ -612,6 +644,10 @@
                 "laminas",
                 "module"
             ],
+            "support": {
+                "issues": "https://github.com/doctrine/DoctrineModule/issues",
+                "source": "https://github.com/doctrine/DoctrineModule/tree/4.0.6"
+            },
             "funding": [
                 {
                     "url": "https://www.doctrine-project.org/sponsorship.html",
@@ -626,24 +662,24 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-04-09T05:25:24+00:00"
+            "time": "2020-11-13T21:00:59+00:00"
         },
         {
             "name": "doctrine/event-manager",
-            "version": "1.1.0",
+            "version": "1.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/event-manager.git",
-                "reference": "629572819973f13486371cb611386eb17851e85c"
+                "reference": "41370af6a30faa9dc0368c4a6814d596e81aba7f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/event-manager/zipball/629572819973f13486371cb611386eb17851e85c",
-                "reference": "629572819973f13486371cb611386eb17851e85c",
+                "url": "https://api.github.com/repos/doctrine/event-manager/zipball/41370af6a30faa9dc0368c4a6814d596e81aba7f",
+                "reference": "41370af6a30faa9dc0368c4a6814d596e81aba7f",
                 "shasum": ""
             },
             "require": {
-                "php": "^7.1"
+                "php": "^7.1 || ^8.0"
             },
             "conflict": {
                 "doctrine/common": "<2.9@dev"
@@ -702,7 +738,25 @@
                 "event system",
                 "events"
             ],
-            "time": "2019-11-10T09:48:07+00:00"
+            "support": {
+                "issues": "https://github.com/doctrine/event-manager/issues",
+                "source": "https://github.com/doctrine/event-manager/tree/1.1.x"
+            },
+            "funding": [
+                {
+                    "url": "https://www.doctrine-project.org/sponsorship.html",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://www.patreon.com/phpdoctrine",
+                    "type": "patreon"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/doctrine%2Fevent-manager",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2020-05-29T18:28:51+00:00"
         },
         {
             "name": "doctrine/inflector",
@@ -780,6 +834,10 @@
                 "uppercase",
                 "words"
             ],
+            "support": {
+                "issues": "https://github.com/doctrine/inflector/issues",
+                "source": "https://github.com/doctrine/inflector/tree/1.4.x"
+            },
             "funding": [
                 {
                     "url": "https://www.doctrine-project.org/sponsorship.html",
@@ -856,6 +914,10 @@
                 "parser",
                 "php"
             ],
+            "support": {
+                "issues": "https://github.com/doctrine/lexer/issues",
+                "source": "https://github.com/doctrine/lexer/tree/1.2.1"
+            },
             "funding": [
                 {
                     "url": "https://www.doctrine-project.org/sponsorship.html",
@@ -874,16 +936,16 @@
         },
         {
             "name": "doctrine/persistence",
-            "version": "1.3.7",
+            "version": "1.3.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/persistence.git",
-                "reference": "0af483f91bada1c9ded6c2cfd26ab7d5ab2094e0"
+                "reference": "7a6eac9fb6f61bba91328f15aa7547f4806ca288"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/persistence/zipball/0af483f91bada1c9ded6c2cfd26ab7d5ab2094e0",
-                "reference": "0af483f91bada1c9ded6c2cfd26ab7d5ab2094e0",
+                "url": "https://api.github.com/repos/doctrine/persistence/zipball/7a6eac9fb6f61bba91328f15aa7547f4806ca288",
+                "reference": "7a6eac9fb6f61bba91328f15aa7547f4806ca288",
                 "shasum": ""
             },
             "require": {
@@ -892,7 +954,7 @@
                 "doctrine/collections": "^1.0",
                 "doctrine/event-manager": "^1.0",
                 "doctrine/reflection": "^1.2",
-                "php": "^7.1"
+                "php": "^7.1 || ^8.0"
             },
             "conflict": {
                 "doctrine/common": "<2.10@dev"
@@ -900,7 +962,8 @@
             "require-dev": {
                 "doctrine/coding-standard": "^6.0",
                 "phpstan/phpstan": "^0.11",
-                "phpunit/phpunit": "^7.0"
+                "phpunit/phpunit": "^7.0 || ^8.0 || ^9.0",
+                "vimeo/psalm": "^3.11"
             },
             "type": "library",
             "extra": {
@@ -953,6 +1016,10 @@
                 "orm",
                 "persistence"
             ],
+            "support": {
+                "issues": "https://github.com/doctrine/persistence/issues",
+                "source": "https://github.com/doctrine/persistence/tree/1.3.x"
+            },
             "funding": [
                 {
                     "url": "https://www.doctrine-project.org/sponsorship.html",
@@ -967,36 +1034,36 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-03-21T15:13:52+00:00"
+            "time": "2020-06-20T12:56:16+00:00"
         },
         {
             "name": "doctrine/reflection",
-            "version": "1.2.1",
+            "version": "1.2.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/reflection.git",
-                "reference": "55e71912dfcd824b2fdd16f2d9afe15684cfce79"
+                "reference": "fa587178be682efe90d005e3a322590d6ebb59a5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/reflection/zipball/55e71912dfcd824b2fdd16f2d9afe15684cfce79",
-                "reference": "55e71912dfcd824b2fdd16f2d9afe15684cfce79",
+                "url": "https://api.github.com/repos/doctrine/reflection/zipball/fa587178be682efe90d005e3a322590d6ebb59a5",
+                "reference": "fa587178be682efe90d005e3a322590d6ebb59a5",
                 "shasum": ""
             },
             "require": {
                 "doctrine/annotations": "^1.0",
                 "ext-tokenizer": "*",
-                "php": "^7.1"
+                "php": "^7.1 || ^8.0"
             },
             "conflict": {
                 "doctrine/common": "<2.9"
             },
             "require-dev": {
-                "doctrine/coding-standard": "^5.0",
+                "doctrine/coding-standard": "^6.0 || ^8.2.0",
                 "doctrine/common": "^2.10",
-                "phpstan/phpstan": "^0.11.0",
-                "phpstan/phpstan-phpunit": "^0.11.0",
-                "phpunit/phpunit": "^7.0"
+                "phpstan/phpstan": "^0.11.0 || ^0.12.20",
+                "phpstan/phpstan-phpunit": "^0.11.0 || ^0.12.16",
+                "phpunit/phpunit": "^7.5 || ^9.1.5"
             },
             "type": "library",
             "extra": {
@@ -1045,7 +1112,12 @@
                 "reflection",
                 "static"
             ],
-            "time": "2020-03-27T11:06:43+00:00"
+            "support": {
+                "issues": "https://github.com/doctrine/reflection/issues",
+                "source": "https://github.com/doctrine/reflection/tree/1.2.2"
+            },
+            "abandoned": "roave/better-reflection",
+            "time": "2020-10-27T21:46:55+00:00"
         },
         {
             "name": "laminas/laminas-authentication",
@@ -1111,23 +1183,46 @@
                 "Authentication",
                 "laminas"
             ],
+            "support": {
+                "chat": "https://laminas.dev/chat",
+                "docs": "https://docs.laminas.dev/laminas-authentication/",
+                "forum": "https://discourse.laminas.dev",
+                "issues": "https://github.com/laminas/laminas-authentication/issues",
+                "rss": "https://github.com/laminas/laminas-authentication/releases.atom",
+                "source": "https://github.com/laminas/laminas-authentication"
+            },
             "time": "2019-12-31T16:14:48+00:00"
         },
         {
             "name": "laminas/laminas-cache",
-            "version": "2.9.0",
+            "version": "2.10.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laminas/laminas-cache.git",
-                "reference": "f4746a868c3e2f2da63c19d23efac12b9d1bb554"
+                "reference": "060b2a71d42b12122a3546594727e7d4b870abd5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laminas/laminas-cache/zipball/f4746a868c3e2f2da63c19d23efac12b9d1bb554",
-                "reference": "f4746a868c3e2f2da63c19d23efac12b9d1bb554",
+                "url": "https://api.github.com/repos/laminas/laminas-cache/zipball/060b2a71d42b12122a3546594727e7d4b870abd5",
+                "reference": "060b2a71d42b12122a3546594727e7d4b870abd5",
                 "shasum": ""
             },
             "require": {
+                "laminas/laminas-cache-storage-adapter-apc": "^1.0",
+                "laminas/laminas-cache-storage-adapter-apcu": "^1.0",
+                "laminas/laminas-cache-storage-adapter-blackhole": "^1.0",
+                "laminas/laminas-cache-storage-adapter-dba": "^1.0",
+                "laminas/laminas-cache-storage-adapter-ext-mongodb": "^1.0",
+                "laminas/laminas-cache-storage-adapter-filesystem": "^1.0",
+                "laminas/laminas-cache-storage-adapter-memcache": "^1.0",
+                "laminas/laminas-cache-storage-adapter-memcached": "^1.0",
+                "laminas/laminas-cache-storage-adapter-memory": "^1.0",
+                "laminas/laminas-cache-storage-adapter-mongodb": "^1.0",
+                "laminas/laminas-cache-storage-adapter-redis": "^1.0",
+                "laminas/laminas-cache-storage-adapter-session": "^1.0",
+                "laminas/laminas-cache-storage-adapter-wincache": "^1.0",
+                "laminas/laminas-cache-storage-adapter-xcache": "^1.0",
+                "laminas/laminas-cache-storage-adapter-zend-server": "^1.0",
                 "laminas/laminas-eventmanager": "^2.6.3 || ^3.2",
                 "laminas/laminas-servicemanager": "^2.7.8 || ^3.3",
                 "laminas/laminas-stdlib": "^3.2.1",
@@ -1141,38 +1236,20 @@
                 "psr/simple-cache-implementation": "1.0"
             },
             "replace": {
-                "zendframework/zend-cache": "self.version"
+                "zendframework/zend-cache": "^2.9.0"
             },
             "require-dev": {
                 "cache/integration-tests": "^0.16",
                 "laminas/laminas-coding-standard": "~1.0.0",
                 "laminas/laminas-serializer": "^2.6",
-                "laminas/laminas-session": "^2.7.4",
                 "phpbench/phpbench": "^0.13",
                 "phpunit/phpunit": "^5.7.27 || ^6.5.8 || ^7.1.2"
             },
             "suggest": {
-                "ext-apc": "APC or compatible extension, to use the APC storage adapter",
-                "ext-apcu": "APCU >= 5.1.0, to use the APCu storage adapter",
-                "ext-dba": "DBA, to use the DBA storage adapter",
-                "ext-memcache": "Memcache >= 2.0.0 to use the Memcache storage adapter",
-                "ext-memcached": "Memcached >= 1.0.0 to use the Memcached storage adapter",
-                "ext-mongo": "Mongo, to use MongoDb storage adapter",
-                "ext-mongodb": "MongoDB, to use the ExtMongoDb storage adapter",
-                "ext-redis": "Redis, to use Redis storage adapter",
-                "ext-wincache": "WinCache, to use the WinCache storage adapter",
-                "ext-xcache": "XCache, to use the XCache storage adapter",
-                "laminas/laminas-serializer": "Laminas\\Serializer component",
-                "laminas/laminas-session": "Laminas\\Session component",
-                "mongodb/mongodb": "Required for use with the ext-mongodb adapter",
-                "mongofill/mongofill": "Alternative to ext-mongo - a pure PHP implementation designed as a drop in replacement"
+                "laminas/laminas-serializer": "Laminas\\Serializer component"
             },
             "type": "library",
             "extra": {
-                "branch-alias": {
-                    "dev-master": "2.9.x-dev",
-                    "dev-develop": "2.10.x-dev"
-                },
                 "laminas": {
                     "component": "Laminas\\Cache",
                     "config-provider": "Laminas\\Cache\\ConfigProvider"
@@ -1198,7 +1275,932 @@
                 "psr-16",
                 "psr-6"
             ],
-            "time": "2019-12-31T16:23:18+00:00"
+            "support": {
+                "chat": "https://laminas.dev/chat",
+                "docs": "https://docs.laminas.dev/laminas-cache/",
+                "forum": "https://discourse.laminas.dev",
+                "issues": "https://github.com/laminas/laminas-cache/issues",
+                "rss": "https://github.com/laminas/laminas-cache/releases.atom",
+                "source": "https://github.com/laminas/laminas-cache"
+            },
+            "funding": [
+                {
+                    "url": "https://funding.communitybridge.org/projects/laminas-project",
+                    "type": "community_bridge"
+                }
+            ],
+            "time": "2020-11-08T13:01:19+00:00"
+        },
+        {
+            "name": "laminas/laminas-cache-storage-adapter-apc",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laminas/laminas-cache-storage-adapter-apc.git",
+                "reference": "8b375d994f6e67534f6ae6e995249e706faa30c1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laminas/laminas-cache-storage-adapter-apc/zipball/8b375d994f6e67534f6ae6e995249e706faa30c1",
+                "reference": "8b375d994f6e67534f6ae6e995249e706faa30c1",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^5.6 || ^7.0"
+            },
+            "conflict": {
+                "laminas/laminas-cache": "<2.10"
+            },
+            "provide": {
+                "laminas/laminas-cache-storage-implementation": "1.0"
+            },
+            "require-dev": {
+                "laminas/laminas-cache": "^2.10",
+                "laminas/laminas-cache-storage-adapter-test": "^1.0@dev",
+                "laminas/laminas-coding-standard": "~1.0.0",
+                "phpunit/phpunit": "^5.7.27 || ^6.5.8 || ^7.1.2"
+            },
+            "suggest": {
+                "ext-apc": "APC or compatible extension, to use the APC storage adapter"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Laminas\\Cache\\Storage\\Adapter\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "description": "Laminas cache adapter",
+            "keywords": [
+                "cache",
+                "laminas"
+            ],
+            "support": {
+                "docs": "https://docs.laminas.dev/laminas-cache-storage-adapter-apc/",
+                "forum": "https://discourse.laminas.dev/",
+                "issues": "https://github.com/laminas/laminas-cache-storage-adapter-apc/issues",
+                "rss": "https://github.com/laminas/laminas-cache-storage-adapter-apc/releases.atom",
+                "source": "https://github.com/laminas/laminas-cache-storage-adapter-apc"
+            },
+            "funding": [
+                {
+                    "url": "https://funding.communitybridge.org/projects/laminas-project",
+                    "type": "community_bridge"
+                }
+            ],
+            "time": "2020-10-12T16:04:12+00:00"
+        },
+        {
+            "name": "laminas/laminas-cache-storage-adapter-apcu",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laminas/laminas-cache-storage-adapter-apcu.git",
+                "reference": "1fdd7585042c1a577f6e630535df1e86e23cf5dc"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laminas/laminas-cache-storage-adapter-apcu/zipball/1fdd7585042c1a577f6e630535df1e86e23cf5dc",
+                "reference": "1fdd7585042c1a577f6e630535df1e86e23cf5dc",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^5.6 || ^7.0"
+            },
+            "conflict": {
+                "laminas/laminas-cache": "<2.10"
+            },
+            "provide": {
+                "laminas/laminas-cache-storage-implementation": "1.0"
+            },
+            "require-dev": {
+                "laminas/laminas-cache": "^2.10",
+                "laminas/laminas-cache-storage-adapter-test": "^1.0@dev",
+                "laminas/laminas-coding-standard": "~1.0.0",
+                "squizlabs/php_codesniffer": "^2.7"
+            },
+            "suggest": {
+                "ext-apcu": "APCU >= 5.1.0, to use the APCu storage adapter"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Laminas\\Cache\\Storage\\Adapter\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "description": "Laminas cache adapter for apcu",
+            "keywords": [
+                "cache",
+                "laminas"
+            ],
+            "support": {
+                "docs": "https://docs.laminas.dev/laminas-cache-storage-adapter-apcu/",
+                "forum": "https://discourse.laminas.dev/",
+                "issues": "https://github.com/laminas/laminas-cache-storage-adapter-apcu/issues",
+                "rss": "https://github.com/laminas/laminas-cache-storage-adapter-apcu/releases.atom",
+                "source": "https://github.com/laminas/laminas-cache-storage-adapter-apcu"
+            },
+            "funding": [
+                {
+                    "url": "https://funding.communitybridge.org/projects/laminas-project",
+                    "type": "community_bridge"
+                }
+            ],
+            "time": "2020-10-12T16:05:19+00:00"
+        },
+        {
+            "name": "laminas/laminas-cache-storage-adapter-blackhole",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laminas/laminas-cache-storage-adapter-blackhole.git",
+                "reference": "5f2cb437160fbc01d7f216b11e4f1ff4c9b95c49"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laminas/laminas-cache-storage-adapter-blackhole/zipball/5f2cb437160fbc01d7f216b11e4f1ff4c9b95c49",
+                "reference": "5f2cb437160fbc01d7f216b11e4f1ff4c9b95c49",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^5.6 || ^7.0"
+            },
+            "conflict": {
+                "laminas/laminas-cache": "<2.10"
+            },
+            "provide": {
+                "laminas/laminas-cache-storage-implementation": "1.0"
+            },
+            "require-dev": {
+                "laminas/laminas-cache": "^2.10",
+                "laminas/laminas-cache-storage-adapter-test": "^1.0@dev",
+                "laminas/laminas-coding-standard": "~1.0.0",
+                "squizlabs/php_codesniffer": "^2.7"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Laminas\\Cache\\Storage\\Adapter\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "description": "Laminas cache adapter for blackhole",
+            "keywords": [
+                "cache",
+                "laminas"
+            ],
+            "support": {
+                "docs": "https://docs.laminas.dev/laminas-cache-storage-adapter-blackhole/",
+                "forum": "https://discourse.laminas.dev/",
+                "issues": "https://github.com/laminas/laminas-cache-storage-adapter-blackhole/issues",
+                "rss": "https://github.com/laminas/laminas-cache-storage-adapter-blackhole/releases.atom",
+                "source": "https://github.com/laminas/laminas-cache-storage-adapter-blackhole"
+            },
+            "funding": [
+                {
+                    "url": "https://funding.communitybridge.org/projects/laminas-project",
+                    "type": "community_bridge"
+                }
+            ],
+            "time": "2020-10-12T16:07:07+00:00"
+        },
+        {
+            "name": "laminas/laminas-cache-storage-adapter-dba",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laminas/laminas-cache-storage-adapter-dba.git",
+                "reference": "ad968d3d8a0350af8e6717be58bb96e5a9e77f3b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laminas/laminas-cache-storage-adapter-dba/zipball/ad968d3d8a0350af8e6717be58bb96e5a9e77f3b",
+                "reference": "ad968d3d8a0350af8e6717be58bb96e5a9e77f3b",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^5.6 || ^7.0"
+            },
+            "conflict": {
+                "laminas/laminas-cache": "<2.10"
+            },
+            "provide": {
+                "laminas/laminas-cache-storage-implementation": "1.0"
+            },
+            "require-dev": {
+                "laminas/laminas-cache": "^2.10",
+                "laminas/laminas-cache-storage-adapter-test": "^1.0@dev",
+                "laminas/laminas-coding-standard": "~1.0.0",
+                "squizlabs/php_codesniffer": "^2.7"
+            },
+            "suggest": {
+                "ext-dba": "DBA, to use the DBA storage adapter"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Laminas\\Cache\\Storage\\Adapter\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "description": "Laminas cache adapter for dba",
+            "keywords": [
+                "cache",
+                "laminas"
+            ],
+            "support": {
+                "docs": "https://docs.laminas.dev/laminas-cache-storage-adapter-dba/",
+                "forum": "https://discourse.laminas.dev/",
+                "issues": "https://github.com/laminas/laminas-cache-storage-adapter-dba/issues",
+                "rss": "https://github.com/laminas/laminas-cache-storage-adapter-dba/releases.atom",
+                "source": "https://github.com/laminas/laminas-cache-storage-adapter-dba"
+            },
+            "funding": [
+                {
+                    "url": "https://funding.communitybridge.org/projects/laminas-project",
+                    "type": "community_bridge"
+                }
+            ],
+            "time": "2020-10-12T16:08:58+00:00"
+        },
+        {
+            "name": "laminas/laminas-cache-storage-adapter-ext-mongodb",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laminas/laminas-cache-storage-adapter-ext-mongodb.git",
+                "reference": "011ec5a8ca721ba012d232b1a01b50a55904b99f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laminas/laminas-cache-storage-adapter-ext-mongodb/zipball/011ec5a8ca721ba012d232b1a01b50a55904b99f",
+                "reference": "011ec5a8ca721ba012d232b1a01b50a55904b99f",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^5.6 || ^7.0"
+            },
+            "conflict": {
+                "laminas/laminas-cache": "<2.10"
+            },
+            "provide": {
+                "laminas/laminas-cache-storage-implementation": "1.0"
+            },
+            "require-dev": {
+                "laminas/laminas-cache": "^2.10",
+                "laminas/laminas-cache-storage-adapter-test": "^1.0@dev",
+                "laminas/laminas-coding-standard": "~1.0.0",
+                "squizlabs/php_codesniffer": "^2.7"
+            },
+            "suggest": {
+                "ext-mongodb": "MongoDB, to use the ExtMongoDb storage adapter"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Laminas\\Cache\\Storage\\Adapter\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "description": "Laminas cache adapter for ext-mongodb",
+            "keywords": [
+                "cache",
+                "laminas"
+            ],
+            "support": {
+                "docs": "https://docs.laminas.dev/laminas-cache-storage-adapter-ext-mongodb/",
+                "forum": "https://discourse.laminas.dev/",
+                "issues": "https://github.com/laminas/laminas-cache-storage-adapter-ext-mongodb/issues",
+                "rss": "https://github.com/laminas/laminas-cache-storage-adapter-ext-mongodb/releases.atom",
+                "source": "https://github.com/laminas/laminas-cache-storage-adapter-ext-mongodb"
+            },
+            "funding": [
+                {
+                    "url": "https://funding.communitybridge.org/projects/laminas-project",
+                    "type": "community_bridge"
+                }
+            ],
+            "time": "2020-10-12T16:11:06+00:00"
+        },
+        {
+            "name": "laminas/laminas-cache-storage-adapter-filesystem",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laminas/laminas-cache-storage-adapter-filesystem.git",
+                "reference": "ae1723bcd84efbdae8f20cbb1bacb9ce9c13dbde"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laminas/laminas-cache-storage-adapter-filesystem/zipball/ae1723bcd84efbdae8f20cbb1bacb9ce9c13dbde",
+                "reference": "ae1723bcd84efbdae8f20cbb1bacb9ce9c13dbde",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^5.6 || ^7.0"
+            },
+            "conflict": {
+                "laminas/laminas-cache": "<2.10"
+            },
+            "provide": {
+                "laminas/laminas-cache-storage-implementation": "1.0"
+            },
+            "require-dev": {
+                "laminas/laminas-cache": "^2.10",
+                "laminas/laminas-cache-storage-adapter-test": "^1.0@dev",
+                "laminas/laminas-coding-standard": "~1.0.0",
+                "squizlabs/php_codesniffer": "^2.7"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Laminas\\Cache\\Storage\\Adapter\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "description": "Laminas cache adapter for filesystem",
+            "keywords": [
+                "cache",
+                "laminas"
+            ],
+            "support": {
+                "docs": "https://docs.laminas.dev/laminas-cache-storage-adapter-filesystem/",
+                "forum": "https://discourse.laminas.dev/",
+                "issues": "https://github.com/laminas/laminas-cache-storage-adapter-filesystem/issues",
+                "rss": "https://github.com/laminas/laminas-cache-storage-adapter-filesystem/releases.atom",
+                "source": "https://github.com/laminas/laminas-cache-storage-adapter-filesystem"
+            },
+            "funding": [
+                {
+                    "url": "https://funding.communitybridge.org/projects/laminas-project",
+                    "type": "community_bridge"
+                }
+            ],
+            "time": "2020-10-12T16:12:14+00:00"
+        },
+        {
+            "name": "laminas/laminas-cache-storage-adapter-memcache",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laminas/laminas-cache-storage-adapter-memcache.git",
+                "reference": "62d0fab1cd261b44a81821e986c0110d7dda896b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laminas/laminas-cache-storage-adapter-memcache/zipball/62d0fab1cd261b44a81821e986c0110d7dda896b",
+                "reference": "62d0fab1cd261b44a81821e986c0110d7dda896b",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^5.6 || ^7.0"
+            },
+            "conflict": {
+                "laminas/laminas-cache": "<2.10"
+            },
+            "provide": {
+                "laminas/laminas-cache-storage-implementation": "1.0"
+            },
+            "require-dev": {
+                "laminas/laminas-cache": "^2.10",
+                "laminas/laminas-cache-storage-adapter-test": "^1.0@dev",
+                "laminas/laminas-coding-standard": "~1.0.0",
+                "squizlabs/php_codesniffer": "^2.7"
+            },
+            "suggest": {
+                "ext-memcache": "Memcache >= 2.0.0 to use the Memcache storage adapter"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Laminas\\Cache\\Storage\\Adapter\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "description": "Laminas cache adapter for memcache",
+            "keywords": [
+                "cache",
+                "laminas"
+            ],
+            "support": {
+                "docs": "https://docs.laminas.dev/laminas-cache-storage-adapter-memcache/",
+                "forum": "https://discourse.laminas.dev/",
+                "issues": "https://github.com/laminas/laminas-cache-storage-adapter-memcache/issues",
+                "rss": "https://github.com/laminas/laminas-cache-storage-adapter-memcache/releases.atom",
+                "source": "https://github.com/laminas/laminas-cache-storage-adapter-memcache"
+            },
+            "funding": [
+                {
+                    "url": "https://funding.communitybridge.org/projects/laminas-project",
+                    "type": "community_bridge"
+                }
+            ],
+            "time": "2020-10-12T16:13:36+00:00"
+        },
+        {
+            "name": "laminas/laminas-cache-storage-adapter-memcached",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laminas/laminas-cache-storage-adapter-memcached.git",
+                "reference": "29599106bb501eb96207b175c460c95487518db1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laminas/laminas-cache-storage-adapter-memcached/zipball/29599106bb501eb96207b175c460c95487518db1",
+                "reference": "29599106bb501eb96207b175c460c95487518db1",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^5.6 || ^7.0"
+            },
+            "conflict": {
+                "laminas/laminas-cache": "<2.10"
+            },
+            "provide": {
+                "laminas/laminas-cache-storage-implementation": "1.0"
+            },
+            "require-dev": {
+                "laminas/laminas-cache": "^2.10",
+                "laminas/laminas-cache-storage-adapter-test": "^1.0@dev",
+                "laminas/laminas-coding-standard": "~1.0.0",
+                "squizlabs/php_codesniffer": "^2.7"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Laminas\\Cache\\Storage\\Adapter\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "description": "Laminas cache adapter for memcached",
+            "keywords": [
+                "cache",
+                "laminas"
+            ],
+            "support": {
+                "docs": "https://docs.laminas.dev/laminas-cache-storage-adapter-memcached/",
+                "forum": "https://discourse.laminas.dev/",
+                "issues": "https://github.com/laminas/laminas-cache-storage-adapter-memcached/issues",
+                "rss": "https://github.com/laminas/laminas-cache-storage-adapter-memcached/releases.atom",
+                "source": "https://github.com/laminas/laminas-cache-storage-adapter-memcached"
+            },
+            "funding": [
+                {
+                    "url": "https://funding.communitybridge.org/projects/laminas-project",
+                    "type": "community_bridge"
+                }
+            ],
+            "time": "2020-10-12T16:16:42+00:00"
+        },
+        {
+            "name": "laminas/laminas-cache-storage-adapter-memory",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laminas/laminas-cache-storage-adapter-memory.git",
+                "reference": "58f4b45281552bb6673c900fadddad21e0ed05c8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laminas/laminas-cache-storage-adapter-memory/zipball/58f4b45281552bb6673c900fadddad21e0ed05c8",
+                "reference": "58f4b45281552bb6673c900fadddad21e0ed05c8",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^5.6 || ^7.0"
+            },
+            "conflict": {
+                "laminas/laminas-cache": "<2.10"
+            },
+            "provide": {
+                "laminas/laminas-cache-storage-implementation": "1.0"
+            },
+            "require-dev": {
+                "laminas/laminas-cache": "^2.10",
+                "laminas/laminas-cache-storage-adapter-test": "^1.0@dev",
+                "laminas/laminas-coding-standard": "~1.0.0",
+                "squizlabs/php_codesniffer": "^2.7"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Laminas\\Cache\\Storage\\Adapter\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "description": "Laminas cache adapter for memory",
+            "keywords": [
+                "cache",
+                "laminas"
+            ],
+            "support": {
+                "docs": "https://docs.laminas.dev/laminas-cache-storage-adapter-memory/",
+                "forum": "https://discourse.laminas.dev/",
+                "issues": "https://github.com/laminas/laminas-cache-storage-adapter-memory/issues",
+                "rss": "https://github.com/laminas/laminas-cache-storage-adapter-memory/releases.atom",
+                "source": "https://github.com/laminas/laminas-cache-storage-adapter-memory"
+            },
+            "funding": [
+                {
+                    "url": "https://funding.communitybridge.org/projects/laminas-project",
+                    "type": "community_bridge"
+                }
+            ],
+            "time": "2020-10-12T16:17:47+00:00"
+        },
+        {
+            "name": "laminas/laminas-cache-storage-adapter-mongodb",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laminas/laminas-cache-storage-adapter-mongodb.git",
+                "reference": "ef4aa396b55533b8eb3e1d4126c39a78a22e49a6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laminas/laminas-cache-storage-adapter-mongodb/zipball/ef4aa396b55533b8eb3e1d4126c39a78a22e49a6",
+                "reference": "ef4aa396b55533b8eb3e1d4126c39a78a22e49a6",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^5.6 || ^7.0"
+            },
+            "conflict": {
+                "laminas/laminas-cache": "<2.10"
+            },
+            "provide": {
+                "laminas/laminas-cache-storage-implementation": "1.0"
+            },
+            "require-dev": {
+                "laminas/laminas-cache": "^2.10",
+                "laminas/laminas-cache-storage-adapter-test": "^1.0@dev",
+                "laminas/laminas-coding-standard": "~1.0.0",
+                "squizlabs/php_codesniffer": "^2.7"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Laminas\\Cache\\Storage\\Adapter\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "description": "Laminas cache adapter for mongodb",
+            "keywords": [
+                "cache",
+                "laminas"
+            ],
+            "support": {
+                "docs": "https://docs.laminas.dev/laminas-cache-storage-adapter-mongodb/",
+                "forum": "https://discourse.laminas.dev/",
+                "issues": "https://github.com/laminas/laminas-cache-storage-adapter-mongodb/issues",
+                "rss": "https://github.com/laminas/laminas-cache-storage-adapter-mongodb/releases.atom",
+                "source": "https://github.com/laminas/laminas-cache-storage-adapter-mongodb"
+            },
+            "funding": [
+                {
+                    "url": "https://funding.communitybridge.org/projects/laminas-project",
+                    "type": "community_bridge"
+                }
+            ],
+            "time": "2020-10-12T16:19:10+00:00"
+        },
+        {
+            "name": "laminas/laminas-cache-storage-adapter-redis",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laminas/laminas-cache-storage-adapter-redis.git",
+                "reference": "3fe904953d17728d7fdaa87be603231f23fb0a4d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laminas/laminas-cache-storage-adapter-redis/zipball/3fe904953d17728d7fdaa87be603231f23fb0a4d",
+                "reference": "3fe904953d17728d7fdaa87be603231f23fb0a4d",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^5.6 || ^7.0"
+            },
+            "conflict": {
+                "laminas/laminas-cache": "<2.10"
+            },
+            "provide": {
+                "laminas/laminas-cache-storage-implementation": "1.0"
+            },
+            "require-dev": {
+                "laminas/laminas-cache": "^2.10",
+                "laminas/laminas-cache-storage-adapter-test": "^1.0@dev",
+                "laminas/laminas-coding-standard": "~1.0.0",
+                "squizlabs/php_codesniffer": "^2.7"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Laminas\\Cache\\Storage\\Adapter\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "description": "Laminas cache adapter for redis",
+            "keywords": [
+                "cache",
+                "laminas"
+            ],
+            "support": {
+                "docs": "https://docs.laminas.dev/laminas-cache-storage-adapter-redis/",
+                "forum": "https://discourse.laminas.dev/",
+                "issues": "https://github.com/laminas/laminas-cache-storage-adapter-redis/issues",
+                "rss": "https://github.com/laminas/laminas-cache-storage-adapter-redis/releases.atom",
+                "source": "https://github.com/laminas/laminas-cache-storage-adapter-redis"
+            },
+            "funding": [
+                {
+                    "url": "https://funding.communitybridge.org/projects/laminas-project",
+                    "type": "community_bridge"
+                }
+            ],
+            "time": "2020-10-12T16:20:13+00:00"
+        },
+        {
+            "name": "laminas/laminas-cache-storage-adapter-session",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laminas/laminas-cache-storage-adapter-session.git",
+                "reference": "0d2276cd61bd162cd38c53aaa22f18137621dc0c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laminas/laminas-cache-storage-adapter-session/zipball/0d2276cd61bd162cd38c53aaa22f18137621dc0c",
+                "reference": "0d2276cd61bd162cd38c53aaa22f18137621dc0c",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^5.6 || ^7.0"
+            },
+            "conflict": {
+                "laminas/laminas-cache": "<2.10"
+            },
+            "provide": {
+                "laminas/laminas-cache-storage-implementation": "1.0"
+            },
+            "require-dev": {
+                "laminas/laminas-cache": "^2.10",
+                "laminas/laminas-cache-storage-adapter-test": "^1.0@dev",
+                "laminas/laminas-coding-standard": "~1.0.0",
+                "laminas/laminas-session": "^2.7.4",
+                "squizlabs/php_codesniffer": "^2.7"
+            },
+            "suggest": {
+                "laminas/laminas-session": "Laminas\\Session component"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Laminas\\Cache\\Storage\\Adapter\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "description": "Laminas cache adapter for session",
+            "keywords": [
+                "cache",
+                "laminas"
+            ],
+            "support": {
+                "docs": "https://docs.laminas.dev/laminas-cache-storage-adapter-session/",
+                "forum": "https://discourse.laminas.dev/",
+                "issues": "https://github.com/laminas/laminas-cache-storage-adapter-session/issues",
+                "rss": "https://github.com/laminas/laminas-cache-storage-adapter-session/releases.atom",
+                "source": "https://github.com/laminas/laminas-cache-storage-adapter-session"
+            },
+            "funding": [
+                {
+                    "url": "https://funding.communitybridge.org/projects/laminas-project",
+                    "type": "community_bridge"
+                }
+            ],
+            "time": "2020-10-12T16:21:28+00:00"
+        },
+        {
+            "name": "laminas/laminas-cache-storage-adapter-wincache",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laminas/laminas-cache-storage-adapter-wincache.git",
+                "reference": "0f54599c5d9aff11b01adadd2742097f923170ba"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laminas/laminas-cache-storage-adapter-wincache/zipball/0f54599c5d9aff11b01adadd2742097f923170ba",
+                "reference": "0f54599c5d9aff11b01adadd2742097f923170ba",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^5.6 || ^7.0"
+            },
+            "conflict": {
+                "laminas/laminas-cache": "<2.10"
+            },
+            "provide": {
+                "laminas/laminas-cache-storage-implementation": "1.0"
+            },
+            "require-dev": {
+                "laminas/laminas-cache": "^2.10",
+                "laminas/laminas-cache-storage-adapter-test": "^1.0@dev",
+                "laminas/laminas-coding-standard": "~1.0.0",
+                "squizlabs/php_codesniffer": "^2.7"
+            },
+            "suggest": {
+                "ext-wincache": "WinCache, to use the WinCache storage adapter"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Laminas\\Cache\\Storage\\Adapter\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "description": "Laminas cache adapter for wincache",
+            "keywords": [
+                "cache",
+                "laminas"
+            ],
+            "support": {
+                "docs": "https://docs.laminas.dev/laminas-cache-storage-adapter-wincache/",
+                "forum": "https://discourse.laminas.dev/",
+                "issues": "https://github.com/laminas/laminas-cache-storage-adapter-wincache/issues",
+                "rss": "https://github.com/laminas/laminas-cache-storage-adapter-wincache/releases.atom",
+                "source": "https://github.com/laminas/laminas-cache-storage-adapter-wincache"
+            },
+            "funding": [
+                {
+                    "url": "https://funding.communitybridge.org/projects/laminas-project",
+                    "type": "community_bridge"
+                }
+            ],
+            "time": "2020-10-12T16:22:49+00:00"
+        },
+        {
+            "name": "laminas/laminas-cache-storage-adapter-xcache",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laminas/laminas-cache-storage-adapter-xcache.git",
+                "reference": "24049557aa796ec7527bcc8032ed68346232b219"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laminas/laminas-cache-storage-adapter-xcache/zipball/24049557aa796ec7527bcc8032ed68346232b219",
+                "reference": "24049557aa796ec7527bcc8032ed68346232b219",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^5.6 || ^7.0"
+            },
+            "conflict": {
+                "laminas/laminas-cache": "<2.10"
+            },
+            "provide": {
+                "laminas/laminas-cache-storage-implementation": "1.0"
+            },
+            "require-dev": {
+                "laminas/laminas-cache": "^2.10",
+                "laminas/laminas-cache-storage-adapter-test": "^1.0@dev",
+                "laminas/laminas-coding-standard": "~1.0.0",
+                "laminas/laminas-serializer": "^2.9",
+                "squizlabs/php_codesniffer": "^2.7"
+            },
+            "suggest": {
+                "ext-xcache": "XCache, to use the XCache storage adapter"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Laminas\\Cache\\Storage\\Adapter\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "description": "Laminas cache adapter for xcache",
+            "keywords": [
+                "cache",
+                "laminas"
+            ],
+            "support": {
+                "docs": "https://docs.laminas.dev/laminas-cache-storage-adapter-xcache/",
+                "forum": "https://discourse.laminas.dev/",
+                "issues": "https://github.com/laminas/laminas-cache-storage-adapter-xcache/issues",
+                "rss": "https://github.com/laminas/laminas-cache-storage-adapter-xcache/releases.atom",
+                "source": "https://github.com/laminas/laminas-cache-storage-adapter-xcache"
+            },
+            "funding": [
+                {
+                    "url": "https://funding.communitybridge.org/projects/laminas-project",
+                    "type": "community_bridge"
+                }
+            ],
+            "time": "2020-10-12T16:23:46+00:00"
+        },
+        {
+            "name": "laminas/laminas-cache-storage-adapter-zend-server",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laminas/laminas-cache-storage-adapter-zend-server.git",
+                "reference": "8d0b0d219a048a92472d89a5e527990f3ea2decc"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laminas/laminas-cache-storage-adapter-zend-server/zipball/8d0b0d219a048a92472d89a5e527990f3ea2decc",
+                "reference": "8d0b0d219a048a92472d89a5e527990f3ea2decc",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^5.6 || ^7.0"
+            },
+            "conflict": {
+                "laminas/laminas-cache": "<2.10"
+            },
+            "provide": {
+                "laminas/laminas-cache-storage-implementation": "1.0"
+            },
+            "require-dev": {
+                "laminas/laminas-cache": "^2.10",
+                "laminas/laminas-cache-storage-adapter-test": "^1.0@dev",
+                "laminas/laminas-coding-standard": "~1.0.0",
+                "squizlabs/php_codesniffer": "^2.7"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Laminas\\Cache\\Storage\\Adapter\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "description": "Laminas cache adapter for zend-server",
+            "keywords": [
+                "cache",
+                "laminas"
+            ],
+            "support": {
+                "docs": "https://docs.laminas.dev/laminas-cache-storage-adapter-zend-server/",
+                "forum": "https://discourse.laminas.dev/",
+                "issues": "https://github.com/laminas/laminas-cache-storage-adapter-zend-server/issues",
+                "rss": "https://github.com/laminas/laminas-cache-storage-adapter-zend-server/releases.atom",
+                "source": "https://github.com/laminas/laminas-cache-storage-adapter-zend-server"
+            },
+            "funding": [
+                {
+                    "url": "https://funding.communitybridge.org/projects/laminas-project",
+                    "type": "community_bridge"
+                }
+            ],
+            "time": "2020-10-12T16:24:25+00:00"
         },
         {
             "name": "laminas/laminas-config",
@@ -1262,41 +2264,43 @@
                 "config",
                 "laminas"
             ],
+            "support": {
+                "chat": "https://laminas.dev/chat",
+                "docs": "https://docs.laminas.dev/laminas-config/",
+                "forum": "https://discourse.laminas.dev",
+                "issues": "https://github.com/laminas/laminas-config/issues",
+                "rss": "https://github.com/laminas/laminas-config/releases.atom",
+                "source": "https://github.com/laminas/laminas-config"
+            },
             "time": "2019-12-31T16:30:11+00:00"
         },
         {
             "name": "laminas/laminas-dependency-plugin",
-            "version": "1.0.4",
+            "version": "2.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laminas/laminas-dependency-plugin.git",
-                "reference": "38bf91861f5b4d49f9a1c530327c997f7a7fb2db"
+                "reference": "7738ded196287dd88dec24d1a3cb58f5d4453e69"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laminas/laminas-dependency-plugin/zipball/38bf91861f5b4d49f9a1c530327c997f7a7fb2db",
-                "reference": "38bf91861f5b4d49f9a1c530327c997f7a7fb2db",
+                "url": "https://api.github.com/repos/laminas/laminas-dependency-plugin/zipball/7738ded196287dd88dec24d1a3cb58f5d4453e69",
+                "reference": "7738ded196287dd88dec24d1a3cb58f5d4453e69",
                 "shasum": ""
             },
             "require": {
-                "composer-plugin-api": "^1.1",
+                "composer-plugin-api": "^1.1 || ^2.0",
                 "php": "^5.6 || ^7.0"
             },
             "require-dev": {
-                "composer/composer": "^1.9",
-                "dealerdirect/phpcodesniffer-composer-installer": "^0.5.0",
+                "composer/composer": "^1.9 || ^2.0",
+                "mikey179/vfsstream": "^1.6",
                 "phpcompatibility/php-compatibility": "^9.3",
-                "phpunit/phpunit": "^8.4",
-                "roave/security-advisories": "dev-master",
-                "webimpress/coding-standard": "^1.0"
+                "roave/security-advisories": "dev-master"
             },
             "type": "composer-plugin",
             "extra": {
-                "branch-alias": {
-                    "dev-master": "1.0.x-dev",
-                    "dev-develop": "1.1.x-dev"
-                },
-                "class": "Laminas\\DependencyPlugin\\DependencyRewriterPlugin"
+                "class": "Laminas\\DependencyPlugin\\DependencyRewriterPluginDelegator"
             },
             "autoload": {
                 "psr-4": {
@@ -1308,13 +2312,17 @@
                 "BSD-3-Clause"
             ],
             "description": "Replace zendframework and zfcampus packages with their Laminas Project equivalents.",
+            "support": {
+                "issues": "https://github.com/laminas/laminas-dependency-plugin/issues",
+                "source": "https://github.com/laminas/laminas-dependency-plugin/tree/2.0.0"
+            },
             "funding": [
                 {
                     "url": "https://funding.communitybridge.org/projects/laminas-project",
                     "type": "community_bridge"
                 }
             ],
-            "time": "2020-05-20T13:45:39+00:00"
+            "time": "2020-10-30T14:51:02+00:00"
         },
         {
             "name": "laminas/laminas-escaper",
@@ -1363,6 +2371,14 @@
                 "escaper",
                 "laminas"
             ],
+            "support": {
+                "chat": "https://laminas.dev/chat",
+                "docs": "https://docs.laminas.dev/laminas-escaper/",
+                "forum": "https://discourse.laminas.dev",
+                "issues": "https://github.com/laminas/laminas-escaper/issues",
+                "rss": "https://github.com/laminas/laminas-escaper/releases.atom",
+                "source": "https://github.com/laminas/laminas-escaper"
+            },
             "time": "2019-12-31T16:43:30+00:00"
         },
         {
@@ -1421,6 +2437,14 @@
                 "events",
                 "laminas"
             ],
+            "support": {
+                "chat": "https://laminas.dev/chat",
+                "docs": "https://docs.laminas.dev/laminas-eventmanager/",
+                "forum": "https://discourse.laminas.dev",
+                "issues": "https://github.com/laminas/laminas-eventmanager/issues",
+                "rss": "https://github.com/laminas/laminas-eventmanager/releases.atom",
+                "source": "https://github.com/laminas/laminas-eventmanager"
+            },
             "time": "2019-12-31T16:44:52+00:00"
         },
         {
@@ -1490,6 +2514,14 @@
                 "filter",
                 "laminas"
             ],
+            "support": {
+                "chat": "https://laminas.dev/chat",
+                "docs": "https://docs.laminas.dev/laminas-filter/",
+                "forum": "https://discourse.laminas.dev",
+                "issues": "https://github.com/laminas/laminas-filter/issues",
+                "rss": "https://github.com/laminas/laminas-filter/releases.atom",
+                "source": "https://github.com/laminas/laminas-filter"
+            },
             "time": "2020-03-29T12:41:29+00:00"
         },
         {
@@ -1572,6 +2604,14 @@
                 "form",
                 "laminas"
             ],
+            "support": {
+                "chat": "https://laminas.dev/chat",
+                "docs": "https://docs.laminas.dev/laminas-form/",
+                "forum": "https://discourse.laminas.dev",
+                "issues": "https://github.com/laminas/laminas-form/issues",
+                "rss": "https://github.com/laminas/laminas-form/releases.atom",
+                "source": "https://github.com/laminas/laminas-form"
+            },
             "funding": [
                 {
                     "url": "https://funding.communitybridge.org/projects/laminas-project",
@@ -1582,16 +2622,16 @@
         },
         {
             "name": "laminas/laminas-http",
-            "version": "2.12.0",
+            "version": "2.13.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laminas/laminas-http.git",
-                "reference": "48bd06ffa3a6875e2b77d6852405eb7b1589d575"
+                "reference": "33b7942f51ce905ce9bfc8bf28badc501d3904b5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laminas/laminas-http/zipball/48bd06ffa3a6875e2b77d6852405eb7b1589d575",
-                "reference": "48bd06ffa3a6875e2b77d6852405eb7b1589d575",
+                "url": "https://api.github.com/repos/laminas/laminas-http/zipball/33b7942f51ce905ce9bfc8bf28badc501d3904b5",
+                "reference": "33b7942f51ce905ce9bfc8bf28badc501d3904b5",
                 "shasum": ""
             },
             "require": {
@@ -1614,12 +2654,6 @@
                 "paragonie/certainty": "For automated management of cacert.pem"
             },
             "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "2.12.x-dev",
-                    "dev-develop": "2.13.x-dev"
-                }
-            },
             "autoload": {
                 "psr-4": {
                     "Laminas\\Http\\": "src/"
@@ -1636,26 +2670,34 @@
                 "http client",
                 "laminas"
             ],
+            "support": {
+                "chat": "https://laminas.dev/chat",
+                "docs": "https://docs.laminas.dev/laminas-http/",
+                "forum": "https://discourse.laminas.dev",
+                "issues": "https://github.com/laminas/laminas-http/issues",
+                "rss": "https://github.com/laminas/laminas-http/releases.atom",
+                "source": "https://github.com/laminas/laminas-http"
+            },
             "funding": [
                 {
                     "url": "https://funding.communitybridge.org/projects/laminas-project",
                     "type": "community_bridge"
                 }
             ],
-            "time": "2020-06-23T15:14:37+00:00"
+            "time": "2020-08-18T17:11:58+00:00"
         },
         {
             "name": "laminas/laminas-hydrator",
-            "version": "3.1.0",
+            "version": "3.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laminas/laminas-hydrator.git",
-                "reference": "244cfb1aa094ce3b17ef1a185b3ad6e8cb3aa792"
+                "reference": "e75fbff6ce3cbd2b72796a3a9890c3a150d452f5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laminas/laminas-hydrator/zipball/244cfb1aa094ce3b17ef1a185b3ad6e8cb3aa792",
-                "reference": "244cfb1aa094ce3b17ef1a185b3ad6e8cb3aa792",
+                "url": "https://api.github.com/repos/laminas/laminas-hydrator/zipball/e75fbff6ce3cbd2b72796a3a9890c3a150d452f5",
+                "reference": "e75fbff6ce3cbd2b72796a3a9890c3a150d452f5",
                 "shasum": ""
             },
             "require": {
@@ -1683,11 +2725,6 @@
             },
             "type": "library",
             "extra": {
-                "branch-alias": {
-                    "dev-release-2.4": "2.4.x-dev",
-                    "dev-master": "3.1.x-dev",
-                    "dev-develop": "3.2.x-dev"
-                },
                 "laminas": {
                     "component": "Laminas\\Hydrator",
                     "config-provider": "Laminas\\Hydrator\\ConfigProvider"
@@ -1708,13 +2745,21 @@
                 "hydrator",
                 "laminas"
             ],
+            "support": {
+                "chat": "https://laminas.dev/chat",
+                "docs": "https://docs.laminas.dev/laminas-hydrator/",
+                "forum": "https://discourse.laminas.dev",
+                "issues": "https://github.com/laminas/laminas-hydrator/issues",
+                "rss": "https://github.com/laminas/laminas-hydrator/releases.atom",
+                "source": "https://github.com/laminas/laminas-hydrator"
+            },
             "funding": [
                 {
                     "url": "https://funding.communitybridge.org/projects/laminas-project",
                     "type": "community_bridge"
                 }
             ],
-            "time": "2020-07-14T21:04:59+00:00"
+            "time": "2020-10-06T14:59:01+00:00"
         },
         {
             "name": "laminas/laminas-inputfilter",
@@ -1775,6 +2820,14 @@
                 "inputfilter",
                 "laminas"
             ],
+            "support": {
+                "chat": "https://laminas.dev/chat",
+                "docs": "https://docs.laminas.dev/laminas-inputfilter/",
+                "forum": "https://discourse.laminas.dev",
+                "issues": "https://github.com/laminas/laminas-inputfilter/issues",
+                "rss": "https://github.com/laminas/laminas-inputfilter/releases.atom",
+                "source": "https://github.com/laminas/laminas-inputfilter"
+            },
             "time": "2019-12-31T17:11:54+00:00"
         },
         {
@@ -1829,6 +2882,14 @@
                 "json",
                 "laminas"
             ],
+            "support": {
+                "chat": "https://laminas.dev/chat",
+                "docs": "https://docs.laminas.dev/laminas-json/",
+                "forum": "https://discourse.laminas.dev",
+                "issues": "https://github.com/laminas/laminas-json/issues",
+                "rss": "https://github.com/laminas/laminas-json/releases.atom",
+                "source": "https://github.com/laminas/laminas-json"
+            },
             "time": "2019-12-31T17:15:04+00:00"
         },
         {
@@ -1878,20 +2939,28 @@
                 "laminas",
                 "loader"
             ],
+            "support": {
+                "chat": "https://laminas.dev/chat",
+                "docs": "https://docs.laminas.dev/laminas-loader/",
+                "forum": "https://discourse.laminas.dev",
+                "issues": "https://github.com/laminas/laminas-loader/issues",
+                "rss": "https://github.com/laminas/laminas-loader/releases.atom",
+                "source": "https://github.com/laminas/laminas-loader"
+            },
             "time": "2019-12-31T17:18:27+00:00"
         },
         {
             "name": "laminas/laminas-modulemanager",
-            "version": "2.8.4",
+            "version": "2.9.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laminas/laminas-modulemanager.git",
-                "reference": "92b1cde1aab5aef687b863face6dd5d9c6751c78"
+                "reference": "789bbd4ab391da9221f265f6bb2d594f8f11855b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laminas/laminas-modulemanager/zipball/92b1cde1aab5aef687b863face6dd5d9c6751c78",
-                "reference": "92b1cde1aab5aef687b863face6dd5d9c6751c78",
+                "url": "https://api.github.com/repos/laminas/laminas-modulemanager/zipball/789bbd4ab391da9221f265f6bb2d594f8f11855b",
+                "reference": "789bbd4ab391da9221f265f6bb2d594f8f11855b",
                 "shasum": ""
             },
             "require": {
@@ -1899,10 +2968,11 @@
                 "laminas/laminas-eventmanager": "^3.2 || ^2.6.3",
                 "laminas/laminas-stdlib": "^3.1 || ^2.7",
                 "laminas/laminas-zendframework-bridge": "^1.0",
-                "php": "^5.6 || ^7.0"
+                "php": "^5.6 || ^7.0",
+                "webimpress/safe-writer": "^1.0.2 || ^2.1"
             },
             "replace": {
-                "zendframework/zend-modulemanager": "self.version"
+                "zendframework/zend-modulemanager": "^2.8.4"
             },
             "require-dev": {
                 "laminas/laminas-coding-standard": "~1.0.0",
@@ -1922,8 +2992,8 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.8.x-dev",
-                    "dev-develop": "2.9.x-dev"
+                    "dev-master": "2.9.x-dev",
+                    "dev-develop": "2.10.x-dev"
                 }
             },
             "autoload": {
@@ -1941,7 +3011,21 @@
                 "laminas",
                 "modulemanager"
             ],
-            "time": "2019-12-31T17:26:56+00:00"
+            "support": {
+                "chat": "https://laminas.dev/chat",
+                "docs": "https://docs.laminas.dev/laminas-modulemanager/",
+                "forum": "https://discourse.laminas.dev",
+                "issues": "https://github.com/laminas/laminas-modulemanager/issues",
+                "rss": "https://github.com/laminas/laminas-modulemanager/releases.atom",
+                "source": "https://github.com/laminas/laminas-modulemanager"
+            },
+            "funding": [
+                {
+                    "url": "https://funding.communitybridge.org/projects/laminas-project",
+                    "type": "community_bridge"
+                }
+            ],
+            "time": "2020-08-25T09:29:22+00:00"
         },
         {
             "name": "laminas/laminas-mvc",
@@ -2017,20 +3101,28 @@
                 "laminas",
                 "mvc"
             ],
+            "support": {
+                "chat": "https://laminas.dev/chat",
+                "docs": "https://docs.laminas.dev/laminas-mvc/",
+                "forum": "https://discourse.laminas.dev",
+                "issues": "https://github.com/laminas/laminas-mvc/issues",
+                "rss": "https://github.com/laminas/laminas-mvc/releases.atom",
+                "source": "https://github.com/laminas/laminas-mvc"
+            },
             "time": "2019-12-31T17:33:14+00:00"
         },
         {
             "name": "laminas/laminas-paginator",
-            "version": "2.8.3",
+            "version": "2.8.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laminas/laminas-paginator.git",
-                "reference": "ffc8ffc115375522334e039972169f1c226b4f7d"
+                "reference": "8f77f51b508a5f5ccf0d67dddd42bb52d9aa43f1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laminas/laminas-paginator/zipball/ffc8ffc115375522334e039972169f1c226b4f7d",
-                "reference": "ffc8ffc115375522334e039972169f1c226b4f7d",
+                "url": "https://api.github.com/repos/laminas/laminas-paginator/zipball/8f77f51b508a5f5ccf0d67dddd42bb52d9aa43f1",
+                "reference": "8f77f51b508a5f5ccf0d67dddd42bb52d9aa43f1",
                 "shasum": ""
             },
             "require": {
@@ -2086,13 +3178,21 @@
                 "laminas",
                 "paginator"
             ],
+            "support": {
+                "chat": "https://laminas.dev/chat",
+                "docs": "https://docs.laminas.dev/laminas-paginator/",
+                "forum": "https://discourse.laminas.dev",
+                "issues": "https://github.com/laminas/laminas-paginator/issues",
+                "rss": "https://github.com/laminas/laminas-paginator/releases.atom",
+                "source": "https://github.com/laminas/laminas-paginator"
+            },
             "funding": [
                 {
                     "url": "https://funding.communitybridge.org/projects/laminas-project",
                     "type": "community_bridge"
                 }
             ],
-            "time": "2020-06-22T16:24:49+00:00"
+            "time": "2020-09-10T14:44:15+00:00"
         },
         {
             "name": "laminas/laminas-router",
@@ -2157,11 +3257,19 @@
                 "mvc",
                 "routing"
             ],
+            "support": {
+                "chat": "https://laminas.dev/chat",
+                "docs": "https://docs.laminas.dev/laminas-router/",
+                "forum": "https://discourse.laminas.dev",
+                "issues": "https://github.com/laminas/laminas-router/issues",
+                "rss": "https://github.com/laminas/laminas-router/releases.atom",
+                "source": "https://github.com/laminas/laminas-router"
+            },
             "time": "2020-03-29T13:21:03+00:00"
         },
         {
             "name": "laminas/laminas-servicemanager",
-            "version": "3.4.1",
+            "version": "3.5.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laminas/laminas-servicemanager.git",
@@ -2229,6 +3337,14 @@
                 "service-manager",
                 "servicemanager"
             ],
+            "support": {
+                "chat": "https://laminas.dev/chat",
+                "docs": "https://docs.laminas.dev/laminas-servicemanager/",
+                "forum": "https://discourse.laminas.dev",
+                "issues": "https://github.com/laminas/laminas-servicemanager/issues",
+                "rss": "https://github.com/laminas/laminas-servicemanager/releases.atom",
+                "source": "https://github.com/laminas/laminas-servicemanager"
+            },
             "funding": [
                 {
                     "url": "https://funding.communitybridge.org/projects/laminas-project",
@@ -2285,6 +3401,14 @@
                 "laminas",
                 "stdlib"
             ],
+            "support": {
+                "chat": "https://laminas.dev/chat",
+                "docs": "https://docs.laminas.dev/laminas-stdlib/",
+                "forum": "https://discourse.laminas.dev",
+                "issues": "https://github.com/laminas/laminas-stdlib/issues",
+                "rss": "https://github.com/laminas/laminas-stdlib/releases.atom",
+                "source": "https://github.com/laminas/laminas-stdlib"
+            },
             "time": "2019-12-31T17:51:15+00:00"
         },
         {
@@ -2336,6 +3460,14 @@
                 "laminas",
                 "uri"
             ],
+            "support": {
+                "chat": "https://laminas.dev/chat",
+                "docs": "https://docs.laminas.dev/laminas-uri/",
+                "forum": "https://discourse.laminas.dev",
+                "issues": "https://github.com/laminas/laminas-uri/issues",
+                "rss": "https://github.com/laminas/laminas-uri/releases.atom",
+                "source": "https://github.com/laminas/laminas-uri"
+            },
             "time": "2019-12-31T17:56:00+00:00"
         },
         {
@@ -2415,6 +3547,14 @@
                 "laminas",
                 "validator"
             ],
+            "support": {
+                "chat": "https://laminas.dev/chat",
+                "docs": "https://docs.laminas.dev/laminas-validator/",
+                "forum": "https://discourse.laminas.dev",
+                "issues": "https://github.com/laminas/laminas-validator/issues",
+                "rss": "https://github.com/laminas/laminas-validator/releases.atom",
+                "source": "https://github.com/laminas/laminas-validator"
+            },
             "time": "2020-03-31T18:57:01+00:00"
         },
         {
@@ -2506,35 +3646,39 @@
                 "laminas",
                 "view"
             ],
+            "support": {
+                "chat": "https://laminas.dev/chat",
+                "docs": "https://docs.laminas.dev/laminas-view/",
+                "forum": "https://discourse.laminas.dev",
+                "issues": "https://github.com/laminas/laminas-view/issues",
+                "rss": "https://github.com/laminas/laminas-view/releases.atom",
+                "source": "https://github.com/laminas/laminas-view"
+            },
             "time": "2019-12-31T18:03:30+00:00"
         },
         {
             "name": "laminas/laminas-zendframework-bridge",
-            "version": "1.0.4",
+            "version": "1.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laminas/laminas-zendframework-bridge.git",
-                "reference": "fcd87520e4943d968557803919523772475e8ea3"
+                "reference": "6ede70583e101030bcace4dcddd648f760ddf642"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laminas/laminas-zendframework-bridge/zipball/fcd87520e4943d968557803919523772475e8ea3",
-                "reference": "fcd87520e4943d968557803919523772475e8ea3",
+                "url": "https://api.github.com/repos/laminas/laminas-zendframework-bridge/zipball/6ede70583e101030bcace4dcddd648f760ddf642",
+                "reference": "6ede70583e101030bcace4dcddd648f760ddf642",
                 "shasum": ""
             },
             "require": {
-                "php": "^5.6 || ^7.0"
+                "php": "^5.6 || ^7.0 || ^8.0"
             },
             "require-dev": {
-                "phpunit/phpunit": "^5.7 || ^6.5 || ^7.5 || ^8.1",
+                "phpunit/phpunit": "^5.7 || ^6.5 || ^7.5 || ^8.1 || ^9.3",
                 "squizlabs/php_codesniffer": "^3.5"
             },
             "type": "library",
             "extra": {
-                "branch-alias": {
-                    "dev-master": "1.0.x-dev",
-                    "dev-develop": "1.1.x-dev"
-                },
                 "laminas": {
                     "module": "Laminas\\ZendFrameworkBridge"
                 }
@@ -2558,13 +3702,19 @@
                 "laminas",
                 "zf"
             ],
+            "support": {
+                "forum": "https://discourse.laminas.dev/",
+                "issues": "https://github.com/laminas/laminas-zendframework-bridge/issues",
+                "rss": "https://github.com/laminas/laminas-zendframework-bridge/releases.atom",
+                "source": "https://github.com/laminas/laminas-zendframework-bridge"
+            },
             "funding": [
                 {
                     "url": "https://funding.communitybridge.org/projects/laminas-project",
                     "type": "community_bridge"
                 }
             ],
-            "time": "2020-05-20T16:45:56+00:00"
+            "time": "2020-09-14T14:23:00+00:00"
         },
         {
             "name": "psr/cache",
@@ -2610,6 +3760,9 @@
                 "psr",
                 "psr-6"
             ],
+            "support": {
+                "source": "https://github.com/php-fig/cache/tree/master"
+            },
             "time": "2016-08-06T20:24:11+00:00"
         },
         {
@@ -2659,6 +3812,10 @@
                 "container-interop",
                 "psr"
             ],
+            "support": {
+                "issues": "https://github.com/php-fig/container/issues",
+                "source": "https://github.com/php-fig/container/tree/master"
+            },
             "time": "2017-02-14T16:28:37+00:00"
         },
         {
@@ -2707,20 +3864,23 @@
                 "psr-16",
                 "simple-cache"
             ],
+            "support": {
+                "source": "https://github.com/php-fig/simple-cache/tree/master"
+            },
             "time": "2017-10-23T01:57:42+00:00"
         },
         {
             "name": "symfony/console",
-            "version": "v5.1.2",
+            "version": "v5.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/console.git",
-                "reference": "34ac555a3627e324b660e318daa07572e1140123"
+                "reference": "3e0564fb08d44a98bd5f1960204c958e57bd586b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/console/zipball/34ac555a3627e324b660e318daa07572e1140123",
-                "reference": "34ac555a3627e324b660e318daa07572e1140123",
+                "url": "https://api.github.com/repos/symfony/console/zipball/3e0564fb08d44a98bd5f1960204c958e57bd586b",
+                "reference": "3e0564fb08d44a98bd5f1960204c958e57bd586b",
                 "shasum": ""
             },
             "require": {
@@ -2757,11 +3917,6 @@
                 "symfony/process": ""
             },
             "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "5.1-dev"
-                }
-            },
             "autoload": {
                 "psr-4": {
                     "Symfony\\Component\\Console\\": ""
@@ -2786,6 +3941,15 @@
             ],
             "description": "Symfony Console Component",
             "homepage": "https://symfony.com",
+            "keywords": [
+                "cli",
+                "command line",
+                "console",
+                "terminal"
+            ],
+            "support": {
+                "source": "https://github.com/symfony/console/tree/v5.2.0"
+            },
             "funding": [
                 {
                     "url": "https://symfony.com/sponsor",
@@ -2800,24 +3964,24 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-06-15T12:59:21+00:00"
+            "time": "2020-11-28T11:24:18+00:00"
         },
         {
             "name": "symfony/polyfill-ctype",
-            "version": "v1.18.0",
+            "version": "v1.20.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-ctype.git",
-                "reference": "1c302646f6efc070cd46856e600e5e0684d6b454"
+                "reference": "f4ba089a5b6366e453971d3aad5fe8e897b37f41"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-ctype/zipball/1c302646f6efc070cd46856e600e5e0684d6b454",
-                "reference": "1c302646f6efc070cd46856e600e5e0684d6b454",
+                "url": "https://api.github.com/repos/symfony/polyfill-ctype/zipball/f4ba089a5b6366e453971d3aad5fe8e897b37f41",
+                "reference": "f4ba089a5b6366e453971d3aad5fe8e897b37f41",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.3"
+                "php": ">=7.1"
             },
             "suggest": {
                 "ext-ctype": "For best performance"
@@ -2825,7 +3989,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.18-dev"
+                    "dev-main": "1.20-dev"
                 },
                 "thanks": {
                     "name": "symfony/polyfill",
@@ -2862,6 +4026,9 @@
                 "polyfill",
                 "portable"
             ],
+            "support": {
+                "source": "https://github.com/symfony/polyfill-ctype/tree/v1.20.0"
+            },
             "funding": [
                 {
                     "url": "https://symfony.com/sponsor",
@@ -2876,24 +4043,24 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-07-14T12:35:20+00:00"
+            "time": "2020-10-23T14:02:19+00:00"
         },
         {
             "name": "symfony/polyfill-intl-grapheme",
-            "version": "v1.18.0",
+            "version": "v1.20.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-intl-grapheme.git",
-                "reference": "b740103edbdcc39602239ee8860f0f45a8eb9aa5"
+                "reference": "c7cf3f858ec7d70b89559d6e6eb1f7c2517d479c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-intl-grapheme/zipball/b740103edbdcc39602239ee8860f0f45a8eb9aa5",
-                "reference": "b740103edbdcc39602239ee8860f0f45a8eb9aa5",
+                "url": "https://api.github.com/repos/symfony/polyfill-intl-grapheme/zipball/c7cf3f858ec7d70b89559d6e6eb1f7c2517d479c",
+                "reference": "c7cf3f858ec7d70b89559d6e6eb1f7c2517d479c",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.3"
+                "php": ">=7.1"
             },
             "suggest": {
                 "ext-intl": "For best performance"
@@ -2901,7 +4068,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.18-dev"
+                    "dev-main": "1.20-dev"
                 },
                 "thanks": {
                     "name": "symfony/polyfill",
@@ -2940,6 +4107,9 @@
                 "portable",
                 "shim"
             ],
+            "support": {
+                "source": "https://github.com/symfony/polyfill-intl-grapheme/tree/v1.20.0"
+            },
             "funding": [
                 {
                     "url": "https://symfony.com/sponsor",
@@ -2954,24 +4124,24 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-07-14T12:35:20+00:00"
+            "time": "2020-10-23T14:02:19+00:00"
         },
         {
             "name": "symfony/polyfill-intl-normalizer",
-            "version": "v1.18.0",
+            "version": "v1.20.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-intl-normalizer.git",
-                "reference": "37078a8dd4a2a1e9ab0231af7c6cb671b2ed5a7e"
+                "reference": "727d1096295d807c309fb01a851577302394c897"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-intl-normalizer/zipball/37078a8dd4a2a1e9ab0231af7c6cb671b2ed5a7e",
-                "reference": "37078a8dd4a2a1e9ab0231af7c6cb671b2ed5a7e",
+                "url": "https://api.github.com/repos/symfony/polyfill-intl-normalizer/zipball/727d1096295d807c309fb01a851577302394c897",
+                "reference": "727d1096295d807c309fb01a851577302394c897",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.3"
+                "php": ">=7.1"
             },
             "suggest": {
                 "ext-intl": "For best performance"
@@ -2979,7 +4149,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.18-dev"
+                    "dev-main": "1.20-dev"
                 },
                 "thanks": {
                     "name": "symfony/polyfill",
@@ -3021,6 +4191,9 @@
                 "portable",
                 "shim"
             ],
+            "support": {
+                "source": "https://github.com/symfony/polyfill-intl-normalizer/tree/v1.20.0"
+            },
             "funding": [
                 {
                     "url": "https://symfony.com/sponsor",
@@ -3035,24 +4208,24 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-07-14T12:35:20+00:00"
+            "time": "2020-10-23T14:02:19+00:00"
         },
         {
             "name": "symfony/polyfill-mbstring",
-            "version": "v1.18.0",
+            "version": "v1.20.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-mbstring.git",
-                "reference": "a6977d63bf9a0ad4c65cd352709e230876f9904a"
+                "reference": "39d483bdf39be819deabf04ec872eb0b2410b531"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/a6977d63bf9a0ad4c65cd352709e230876f9904a",
-                "reference": "a6977d63bf9a0ad4c65cd352709e230876f9904a",
+                "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/39d483bdf39be819deabf04ec872eb0b2410b531",
+                "reference": "39d483bdf39be819deabf04ec872eb0b2410b531",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.3"
+                "php": ">=7.1"
             },
             "suggest": {
                 "ext-mbstring": "For best performance"
@@ -3060,7 +4233,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.18-dev"
+                    "dev-main": "1.20-dev"
                 },
                 "thanks": {
                     "name": "symfony/polyfill",
@@ -3098,6 +4271,9 @@
                 "portable",
                 "shim"
             ],
+            "support": {
+                "source": "https://github.com/symfony/polyfill-mbstring/tree/v1.20.0"
+            },
             "funding": [
                 {
                     "url": "https://symfony.com/sponsor",
@@ -3112,29 +4288,29 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-07-14T12:35:20+00:00"
+            "time": "2020-10-23T14:02:19+00:00"
         },
         {
             "name": "symfony/polyfill-php73",
-            "version": "v1.18.0",
+            "version": "v1.20.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-php73.git",
-                "reference": "fffa1a52a023e782cdcc221d781fe1ec8f87fcca"
+                "reference": "8ff431c517be11c78c48a39a66d37431e26a6bed"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-php73/zipball/fffa1a52a023e782cdcc221d781fe1ec8f87fcca",
-                "reference": "fffa1a52a023e782cdcc221d781fe1ec8f87fcca",
+                "url": "https://api.github.com/repos/symfony/polyfill-php73/zipball/8ff431c517be11c78c48a39a66d37431e26a6bed",
+                "reference": "8ff431c517be11c78c48a39a66d37431e26a6bed",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.3"
+                "php": ">=7.1"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.18-dev"
+                    "dev-main": "1.20-dev"
                 },
                 "thanks": {
                     "name": "symfony/polyfill",
@@ -3174,6 +4350,9 @@
                 "portable",
                 "shim"
             ],
+            "support": {
+                "source": "https://github.com/symfony/polyfill-php73/tree/v1.20.0"
+            },
             "funding": [
                 {
                     "url": "https://symfony.com/sponsor",
@@ -3188,29 +4367,29 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-07-14T12:35:20+00:00"
+            "time": "2020-10-23T14:02:19+00:00"
         },
         {
             "name": "symfony/polyfill-php80",
-            "version": "v1.18.0",
+            "version": "v1.20.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-php80.git",
-                "reference": "d87d5766cbf48d72388a9f6b85f280c8ad51f981"
+                "reference": "e70aa8b064c5b72d3df2abd5ab1e90464ad009de"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-php80/zipball/d87d5766cbf48d72388a9f6b85f280c8ad51f981",
-                "reference": "d87d5766cbf48d72388a9f6b85f280c8ad51f981",
+                "url": "https://api.github.com/repos/symfony/polyfill-php80/zipball/e70aa8b064c5b72d3df2abd5ab1e90464ad009de",
+                "reference": "e70aa8b064c5b72d3df2abd5ab1e90464ad009de",
                 "shasum": ""
             },
             "require": {
-                "php": ">=7.0.8"
+                "php": ">=7.1"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.18-dev"
+                    "dev-main": "1.20-dev"
                 },
                 "thanks": {
                     "name": "symfony/polyfill",
@@ -3254,6 +4433,9 @@
                 "portable",
                 "shim"
             ],
+            "support": {
+                "source": "https://github.com/symfony/polyfill-php80/tree/v1.20.0"
+            },
             "funding": [
                 {
                     "url": "https://symfony.com/sponsor",
@@ -3268,20 +4450,20 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-07-14T12:35:20+00:00"
+            "time": "2020-10-23T14:02:19+00:00"
         },
         {
             "name": "symfony/service-contracts",
-            "version": "v2.1.3",
+            "version": "v2.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/service-contracts.git",
-                "reference": "58c7475e5457c5492c26cc740cc0ad7464be9442"
+                "reference": "d15da7ba4957ffb8f1747218be9e1a121fd298a1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/service-contracts/zipball/58c7475e5457c5492c26cc740cc0ad7464be9442",
-                "reference": "58c7475e5457c5492c26cc740cc0ad7464be9442",
+                "url": "https://api.github.com/repos/symfony/service-contracts/zipball/d15da7ba4957ffb8f1747218be9e1a121fd298a1",
+                "reference": "d15da7ba4957ffb8f1747218be9e1a121fd298a1",
                 "shasum": ""
             },
             "require": {
@@ -3294,7 +4476,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.1-dev"
+                    "dev-master": "2.2-dev"
                 },
                 "thanks": {
                     "name": "symfony/contracts",
@@ -3330,6 +4512,9 @@
                 "interoperability",
                 "standards"
             ],
+            "support": {
+                "source": "https://github.com/symfony/service-contracts/tree/master"
+            },
             "funding": [
                 {
                     "url": "https://symfony.com/sponsor",
@@ -3344,20 +4529,20 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-07-06T13:23:11+00:00"
+            "time": "2020-09-07T11:33:47+00:00"
         },
         {
             "name": "symfony/string",
-            "version": "v5.1.2",
+            "version": "v5.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/string.git",
-                "reference": "ac70459db781108db7c6d8981dd31ce0e29e3298"
+                "reference": "40e975edadd4e32cd16f3753b3bad65d9ac48242"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/string/zipball/ac70459db781108db7c6d8981dd31ce0e29e3298",
-                "reference": "ac70459db781108db7c6d8981dd31ce0e29e3298",
+                "url": "https://api.github.com/repos/symfony/string/zipball/40e975edadd4e32cd16f3753b3bad65d9ac48242",
+                "reference": "40e975edadd4e32cd16f3753b3bad65d9ac48242",
                 "shasum": ""
             },
             "require": {
@@ -3375,11 +4560,6 @@
                 "symfony/var-exporter": "^4.4|^5.0"
             },
             "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "5.1-dev"
-                }
-            },
             "autoload": {
                 "psr-4": {
                     "Symfony\\Component\\String\\": ""
@@ -3415,6 +4595,9 @@
                 "utf-8",
                 "utf8"
             ],
+            "support": {
+                "source": "https://github.com/symfony/string/tree/v5.2.0"
+            },
             "funding": [
                 {
                     "url": "https://symfony.com/sponsor",
@@ -3429,7 +4612,66 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-06-11T12:16:36+00:00"
+            "time": "2020-10-24T12:08:07+00:00"
+        },
+        {
+            "name": "webimpress/safe-writer",
+            "version": "2.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/webimpress/safe-writer.git",
+                "reference": "5cfafdec5873c389036f14bf832a5efc9390dcdd"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/webimpress/safe-writer/zipball/5cfafdec5873c389036f14bf832a5efc9390dcdd",
+                "reference": "5cfafdec5873c389036f14bf832a5efc9390dcdd",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.2 || ^8.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^8.5.8 || ^9.3.7",
+                "vimeo/psalm": "^3.14.2",
+                "webimpress/coding-standard": "^1.1.5"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.1.x-dev",
+                    "dev-develop": "2.2.x-dev",
+                    "dev-release-1.0": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Webimpress\\SafeWriter\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-2-Clause"
+            ],
+            "description": "Tool to write files safely, to avoid race conditions",
+            "keywords": [
+                "concurrent write",
+                "file writer",
+                "race condition",
+                "safe writer",
+                "webimpress"
+            ],
+            "support": {
+                "issues": "https://github.com/webimpress/safe-writer/issues",
+                "source": "https://github.com/webimpress/safe-writer/tree/master"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/michalbundyra",
+                    "type": "github"
+                }
+            ],
+            "time": "2020-08-25T07:21:11+00:00"
         }
     ],
     "packages-dev": [
@@ -3462,20 +4704,97 @@
                 }
             ],
             "description": "The phpcs coding standard for API Skeletons",
+            "support": {
+                "issues": "https://github.com/API-Skeletons/coding-standard/issues",
+                "source": "https://github.com/API-Skeletons/coding-standard/tree/master"
+            },
             "time": "2018-02-12T22:16:51+00:00"
         },
         {
-            "name": "doctrine/dbal",
-            "version": "2.10.2",
+            "name": "composer/package-versions-deprecated",
+            "version": "1.11.99.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/doctrine/dbal.git",
-                "reference": "aab745e7b6b2de3b47019da81e7225e14dcfdac8"
+                "url": "https://github.com/composer/package-versions-deprecated.git",
+                "reference": "7413f0b55a051e89485c5cb9f765fe24bb02a7b6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/dbal/zipball/aab745e7b6b2de3b47019da81e7225e14dcfdac8",
-                "reference": "aab745e7b6b2de3b47019da81e7225e14dcfdac8",
+                "url": "https://api.github.com/repos/composer/package-versions-deprecated/zipball/7413f0b55a051e89485c5cb9f765fe24bb02a7b6",
+                "reference": "7413f0b55a051e89485c5cb9f765fe24bb02a7b6",
+                "shasum": ""
+            },
+            "require": {
+                "composer-plugin-api": "^1.1.0 || ^2.0",
+                "php": "^7 || ^8"
+            },
+            "replace": {
+                "ocramius/package-versions": "1.11.99"
+            },
+            "require-dev": {
+                "composer/composer": "^1.9.3 || ^2.0@dev",
+                "ext-zip": "^1.13",
+                "phpunit/phpunit": "^6.5 || ^7"
+            },
+            "type": "composer-plugin",
+            "extra": {
+                "class": "PackageVersions\\Installer",
+                "branch-alias": {
+                    "dev-master": "1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "PackageVersions\\": "src/PackageVersions"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Marco Pivetta",
+                    "email": "ocramius@gmail.com"
+                },
+                {
+                    "name": "Jordi Boggiano",
+                    "email": "j.boggiano@seld.be"
+                }
+            ],
+            "description": "Composer plugin that provides efficient querying for installed package versions (no runtime IO)",
+            "support": {
+                "issues": "https://github.com/composer/package-versions-deprecated/issues",
+                "source": "https://github.com/composer/package-versions-deprecated/tree/1.11.99.1"
+            },
+            "funding": [
+                {
+                    "url": "https://packagist.com",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/composer",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/composer/composer",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2020-11-11T10:22:58+00:00"
+        },
+        {
+            "name": "doctrine/dbal",
+            "version": "2.10.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/doctrine/dbal.git",
+                "reference": "47433196b6390d14409a33885ee42b6208160643"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/doctrine/dbal/zipball/47433196b6390d14409a33885ee42b6208160643",
+                "reference": "47433196b6390d14409a33885ee42b6208160643",
                 "shasum": ""
             },
             "require": {
@@ -3485,13 +4804,14 @@
                 "php": "^7.2"
             },
             "require-dev": {
-                "doctrine/coding-standard": "^6.0",
+                "doctrine/coding-standard": "^8.1",
                 "jetbrains/phpstorm-stubs": "^2019.1",
                 "nikic/php-parser": "^4.4",
-                "phpstan/phpstan": "^0.12",
-                "phpunit/phpunit": "^8.4.1",
+                "phpstan/phpstan": "^0.12.40",
+                "phpunit/phpunit": "^8.5.5",
+                "psalm/plugin-phpunit": "^0.10.0",
                 "symfony/console": "^2.0.5|^3.0|^4.0|^5.0",
-                "vimeo/psalm": "^3.11"
+                "vimeo/psalm": "^3.14.2"
             },
             "suggest": {
                 "symfony/console": "For helpful console commands such as SQL execution and import of files."
@@ -3556,6 +4876,10 @@
                 "sqlserver",
                 "sqlsrv"
             ],
+            "support": {
+                "issues": "https://github.com/doctrine/dbal/issues",
+                "source": "https://github.com/doctrine/dbal/tree/2.10.4"
+            },
             "funding": [
                 {
                     "url": "https://www.doctrine-project.org/sponsorship.html",
@@ -3570,37 +4894,39 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-04-20T17:19:26+00:00"
+            "time": "2020-09-12T21:20:41+00:00"
         },
         {
             "name": "doctrine/doctrine-orm-module",
-            "version": "3.0.5",
+            "version": "3.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/DoctrineORMModule.git",
-                "reference": "d9b473d74cda0748338e0783c45e521bbd848320"
+                "reference": "a9c326da64ce2f3154d0f03936ea473cd99661a9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/DoctrineORMModule/zipball/d9b473d74cda0748338e0783c45e521bbd848320",
-                "reference": "d9b473d74cda0748338e0783c45e521bbd848320",
+                "url": "https://api.github.com/repos/doctrine/DoctrineORMModule/zipball/a9c326da64ce2f3154d0f03936ea473cd99661a9",
+                "reference": "a9c326da64ce2f3154d0f03936ea473cd99661a9",
                 "shasum": ""
             },
             "require": {
+                "composer/package-versions-deprecated": "^1.11",
                 "doctrine/dbal": "^2.10",
                 "doctrine/doctrine-module": "^4.0",
                 "doctrine/orm": "^2.6.4",
+                "doctrine/persistence": "^1.3",
                 "php": "^7.2",
                 "symfony/console": "^5.0"
             },
             "conflict": {
-                "doctrine/migrations": ">=3.0"
+                "doctrine/migrations": "<3.0"
             },
             "require-dev": {
                 "doctrine/annotations": "^1.8",
-                "doctrine/coding-standard": "^7.0.2",
+                "doctrine/coding-standard": "^8.0",
                 "doctrine/data-fixtures": "^1.2.1",
-                "doctrine/migrations": "^1.5 || ^2.0",
+                "doctrine/migrations": "^3.0",
                 "laminas/laminas-code": "^3.3.2",
                 "laminas/laminas-console": "^2.6",
                 "laminas/laminas-developer-tools": "^1.1",
@@ -3626,9 +4952,6 @@
                 }
             },
             "autoload": {
-                "files": [
-                    "src/autoload.php"
-                ],
                 "psr-0": {
                     "DoctrineORMModule\\": "src/"
                 }
@@ -3670,6 +4993,10 @@
                 "module",
                 "orm"
             ],
+            "support": {
+                "issues": "https://github.com/doctrine/DoctrineORMModule/issues",
+                "source": "https://github.com/doctrine/DoctrineORMModule/tree/3.1.1"
+            },
             "funding": [
                 {
                     "url": "https://www.doctrine-project.org/sponsorship.html",
@@ -3684,40 +5011,35 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-06-18T21:07:03+00:00"
+            "time": "2020-11-20T22:27:38+00:00"
         },
         {
             "name": "doctrine/instantiator",
-            "version": "1.3.1",
+            "version": "1.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/instantiator.git",
-                "reference": "f350df0268e904597e3bd9c4685c53e0e333feea"
+                "reference": "d56bf6102915de5702778fe20f2de3b2fe570b5b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/instantiator/zipball/f350df0268e904597e3bd9c4685c53e0e333feea",
-                "reference": "f350df0268e904597e3bd9c4685c53e0e333feea",
+                "url": "https://api.github.com/repos/doctrine/instantiator/zipball/d56bf6102915de5702778fe20f2de3b2fe570b5b",
+                "reference": "d56bf6102915de5702778fe20f2de3b2fe570b5b",
                 "shasum": ""
             },
             "require": {
                 "php": "^7.1 || ^8.0"
             },
             "require-dev": {
-                "doctrine/coding-standard": "^6.0",
+                "doctrine/coding-standard": "^8.0",
                 "ext-pdo": "*",
                 "ext-phar": "*",
-                "phpbench/phpbench": "^0.13",
-                "phpstan/phpstan-phpunit": "^0.11",
-                "phpstan/phpstan-shim": "^0.11",
-                "phpunit/phpunit": "^7.0"
+                "phpbench/phpbench": "^0.13 || 1.0.0-alpha2",
+                "phpstan/phpstan": "^0.12",
+                "phpstan/phpstan-phpunit": "^0.12",
+                "phpunit/phpunit": "^7.0 || ^8.0 || ^9.0"
             },
             "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.2.x-dev"
-                }
-            },
             "autoload": {
                 "psr-4": {
                     "Doctrine\\Instantiator\\": "src/Doctrine/Instantiator/"
@@ -3731,7 +5053,7 @@
                 {
                     "name": "Marco Pivetta",
                     "email": "ocramius@gmail.com",
-                    "homepage": "http://ocramius.github.com/"
+                    "homepage": "https://ocramius.github.io/"
                 }
             ],
             "description": "A small, lightweight utility to instantiate objects in PHP without invoking their constructors",
@@ -3740,6 +5062,10 @@
                 "constructor",
                 "instantiate"
             ],
+            "support": {
+                "issues": "https://github.com/doctrine/instantiator/issues",
+                "source": "https://github.com/doctrine/instantiator/tree/1.4.0"
+            },
             "funding": [
                 {
                     "url": "https://www.doctrine-project.org/sponsorship.html",
@@ -3754,23 +5080,24 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-05-29T17:27:14+00:00"
+            "time": "2020-11-10T18:47:58+00:00"
         },
         {
             "name": "doctrine/orm",
-            "version": "v2.7.3",
+            "version": "2.7.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/orm.git",
-                "reference": "d95e03ba660d50d785a9925f41927fef0ee553cf"
+                "reference": "7d84a4998091ece4d645253ac65de9f879eeed2f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/orm/zipball/d95e03ba660d50d785a9925f41927fef0ee553cf",
-                "reference": "d95e03ba660d50d785a9925f41927fef0ee553cf",
+                "url": "https://api.github.com/repos/doctrine/orm/zipball/7d84a4998091ece4d645253ac65de9f879eeed2f",
+                "reference": "7d84a4998091ece4d645253ac65de9f879eeed2f",
                 "shasum": ""
             },
             "require": {
+                "composer/package-versions-deprecated": "^1.8",
                 "doctrine/annotations": "^1.8",
                 "doctrine/cache": "^1.9.1",
                 "doctrine/collections": "^1.5",
@@ -3782,7 +5109,6 @@
                 "doctrine/lexer": "^1.0",
                 "doctrine/persistence": "^1.3.3 || ^2.0",
                 "ext-pdo": "*",
-                "ocramius/package-versions": "^1.2",
                 "php": "^7.1",
                 "symfony/console": "^3.0|^4.0|^5.0"
             },
@@ -3842,21 +5168,11 @@
                 "database",
                 "orm"
             ],
-            "funding": [
-                {
-                    "url": "https://www.doctrine-project.org/sponsorship.html",
-                    "type": "custom"
-                },
-                {
-                    "url": "https://www.patreon.com/phpdoctrine",
-                    "type": "patreon"
-                },
-                {
-                    "url": "https://tidelift.com/funding/github/packagist/doctrine/orm",
-                    "type": "tidelift"
-                }
-            ],
-            "time": "2020-05-26T16:03:49+00:00"
+            "support": {
+                "issues": "https://github.com/doctrine/orm/issues",
+                "source": "https://github.com/doctrine/orm/tree/2.7.4"
+            },
+            "time": "2020-10-10T17:11:26+00:00"
         },
         {
             "name": "dprevite/lint",
@@ -3893,6 +5209,10 @@
             "keywords": [
                 "lint"
             ],
+            "support": {
+                "issues": "https://github.com/dprevite/lint/issues",
+                "source": "https://github.com/dprevite/lint/tree/1.0.0"
+            },
             "time": "2014-03-20T03:52:32+00:00"
         },
         {
@@ -3950,6 +5270,14 @@
                 "console",
                 "laminas"
             ],
+            "support": {
+                "chat": "https://laminas.dev/chat",
+                "docs": "https://docs.laminas.dev/laminas-console/",
+                "forum": "https://discourse.laminas.dev",
+                "issues": "https://github.com/laminas/laminas-console/issues",
+                "rss": "https://github.com/laminas/laminas-console/releases.atom",
+                "source": "https://github.com/laminas/laminas-console"
+            },
             "time": "2019-12-31T16:31:45+00:00"
         },
         {
@@ -3999,6 +5327,14 @@
                 "dom",
                 "laminas"
             ],
+            "support": {
+                "chat": "https://laminas.dev/chat",
+                "docs": "https://docs.laminas.dev/laminas-dom/",
+                "forum": "https://discourse.laminas.dev",
+                "issues": "https://github.com/laminas/laminas-dom/issues",
+                "rss": "https://github.com/laminas/laminas-dom/releases.atom",
+                "source": "https://github.com/laminas/laminas-dom"
+            },
             "time": "2019-12-31T16:43:02+00:00"
         },
         {
@@ -4074,6 +5410,14 @@
                 "i18n",
                 "laminas"
             ],
+            "support": {
+                "chat": "https://laminas.dev/chat",
+                "docs": "https://docs.laminas.dev/laminas-i18n/",
+                "forum": "https://discourse.laminas.dev",
+                "issues": "https://github.com/laminas/laminas-i18n/issues",
+                "rss": "https://github.com/laminas/laminas-i18n/releases.atom",
+                "source": "https://github.com/laminas/laminas-i18n"
+            },
             "time": "2020-03-29T12:51:08+00:00"
         },
         {
@@ -4147,6 +5491,14 @@
                 "laminas",
                 "test"
             ],
+            "support": {
+                "chat": "https://laminas.dev/chat",
+                "docs": "https://docs.laminas.dev/laminas-test/",
+                "forum": "https://discourse.laminas.dev",
+                "issues": "https://github.com/laminas/laminas-test/issues",
+                "rss": "https://github.com/laminas/laminas-test/releases.atom",
+                "source": "https://github.com/laminas/laminas-test"
+            },
             "funding": [
                 {
                     "url": "https://funding.communitybridge.org/projects/laminas-project",
@@ -4157,16 +5509,16 @@
         },
         {
             "name": "myclabs/deep-copy",
-            "version": "1.10.1",
+            "version": "1.10.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/myclabs/DeepCopy.git",
-                "reference": "969b211f9a51aa1f6c01d1d2aef56d3bd91598e5"
+                "reference": "776f831124e9c62e1a2c601ecc52e776d8bb7220"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/myclabs/DeepCopy/zipball/969b211f9a51aa1f6c01d1d2aef56d3bd91598e5",
-                "reference": "969b211f9a51aa1f6c01d1d2aef56d3bd91598e5",
+                "url": "https://api.github.com/repos/myclabs/DeepCopy/zipball/776f831124e9c62e1a2c601ecc52e776d8bb7220",
+                "reference": "776f831124e9c62e1a2c601ecc52e776d8bb7220",
                 "shasum": ""
             },
             "require": {
@@ -4201,64 +5553,17 @@
                 "object",
                 "object graph"
             ],
+            "support": {
+                "issues": "https://github.com/myclabs/DeepCopy/issues",
+                "source": "https://github.com/myclabs/DeepCopy/tree/1.10.2"
+            },
             "funding": [
                 {
                     "url": "https://tidelift.com/funding/github/packagist/myclabs/deep-copy",
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-06-29T13:22:24+00:00"
-        },
-        {
-            "name": "ocramius/package-versions",
-            "version": "1.5.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/Ocramius/PackageVersions.git",
-                "reference": "1d32342b8c1eb27353c8887c366147b4c2da673c"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/Ocramius/PackageVersions/zipball/1d32342b8c1eb27353c8887c366147b4c2da673c",
-                "reference": "1d32342b8c1eb27353c8887c366147b4c2da673c",
-                "shasum": ""
-            },
-            "require": {
-                "composer-plugin-api": "^1.0.0",
-                "php": "^7.3.0"
-            },
-            "require-dev": {
-                "composer/composer": "^1.8.6",
-                "doctrine/coding-standard": "^6.0.0",
-                "ext-zip": "*",
-                "infection/infection": "^0.13.4",
-                "phpunit/phpunit": "^8.2.5",
-                "vimeo/psalm": "^3.4.9"
-            },
-            "type": "composer-plugin",
-            "extra": {
-                "class": "PackageVersions\\Installer",
-                "branch-alias": {
-                    "dev-master": "1.6.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "PackageVersions\\": "src/PackageVersions"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Marco Pivetta",
-                    "email": "ocramius@gmail.com"
-                }
-            ],
-            "description": "Composer plugin that provides efficient querying for installed package versions (no runtime IO)",
-            "time": "2019-07-17T15:49:50+00:00"
+            "time": "2020-11-13T09:40:50+00:00"
         },
         {
             "name": "phpdocumentor/reflection-common",
@@ -4307,32 +5612,35 @@
                 "reflection",
                 "static analysis"
             ],
+            "support": {
+                "issues": "https://github.com/phpDocumentor/ReflectionCommon/issues",
+                "source": "https://github.com/phpDocumentor/ReflectionCommon/tree/2.x"
+            },
             "time": "2020-06-27T09:03:43+00:00"
         },
         {
             "name": "phpdocumentor/reflection-docblock",
-            "version": "5.1.0",
+            "version": "5.2.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpDocumentor/ReflectionDocBlock.git",
-                "reference": "cd72d394ca794d3466a3b2fc09d5a6c1dc86b47e"
+                "reference": "069a785b2141f5bcf49f3e353548dc1cce6df556"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpDocumentor/ReflectionDocBlock/zipball/cd72d394ca794d3466a3b2fc09d5a6c1dc86b47e",
-                "reference": "cd72d394ca794d3466a3b2fc09d5a6c1dc86b47e",
+                "url": "https://api.github.com/repos/phpDocumentor/ReflectionDocBlock/zipball/069a785b2141f5bcf49f3e353548dc1cce6df556",
+                "reference": "069a785b2141f5bcf49f3e353548dc1cce6df556",
                 "shasum": ""
             },
             "require": {
-                "ext-filter": "^7.1",
-                "php": "^7.2",
-                "phpdocumentor/reflection-common": "^2.0",
-                "phpdocumentor/type-resolver": "^1.0",
-                "webmozart/assert": "^1"
+                "ext-filter": "*",
+                "php": "^7.2 || ^8.0",
+                "phpdocumentor/reflection-common": "^2.2",
+                "phpdocumentor/type-resolver": "^1.3",
+                "webmozart/assert": "^1.9.1"
             },
             "require-dev": {
-                "doctrine/instantiator": "^1",
-                "mockery/mockery": "^1"
+                "mockery/mockery": "~1.3.2"
             },
             "type": "library",
             "extra": {
@@ -4360,20 +5668,24 @@
                 }
             ],
             "description": "With this component, a library can provide support for annotations via DocBlocks or otherwise retrieve information that is embedded in a DocBlock.",
-            "time": "2020-02-22T12:28:44+00:00"
+            "support": {
+                "issues": "https://github.com/phpDocumentor/ReflectionDocBlock/issues",
+                "source": "https://github.com/phpDocumentor/ReflectionDocBlock/tree/master"
+            },
+            "time": "2020-09-03T19:13:55+00:00"
         },
         {
             "name": "phpdocumentor/type-resolver",
-            "version": "1.3.0",
+            "version": "1.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpDocumentor/TypeResolver.git",
-                "reference": "e878a14a65245fbe78f8080eba03b47c3b705651"
+                "reference": "6a467b8989322d92aa1c8bf2bebcc6e5c2ba55c0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpDocumentor/TypeResolver/zipball/e878a14a65245fbe78f8080eba03b47c3b705651",
-                "reference": "e878a14a65245fbe78f8080eba03b47c3b705651",
+                "url": "https://api.github.com/repos/phpDocumentor/TypeResolver/zipball/6a467b8989322d92aa1c8bf2bebcc6e5c2ba55c0",
+                "reference": "6a467b8989322d92aa1c8bf2bebcc6e5c2ba55c0",
                 "shasum": ""
             },
             "require": {
@@ -4405,7 +5717,11 @@
                 }
             ],
             "description": "A PSR-5 based resolver of Class names, Types and Structural Element Names",
-            "time": "2020-06-27T10:12:23+00:00"
+            "support": {
+                "issues": "https://github.com/phpDocumentor/TypeResolver/issues",
+                "source": "https://github.com/phpDocumentor/TypeResolver/tree/1.4.0"
+            },
+            "time": "2020-09-17T18:55:26+00:00"
         },
         {
             "name": "phpspec/prophecy",
@@ -4468,24 +5784,28 @@
                 "spy",
                 "stub"
             ],
+            "support": {
+                "issues": "https://github.com/phpspec/prophecy/issues",
+                "source": "https://github.com/phpspec/prophecy/tree/v1.10.3"
+            },
             "time": "2020-03-05T15:02:03+00:00"
         },
         {
             "name": "phpstan/phpstan",
-            "version": "0.12.32",
+            "version": "0.12.58",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpstan.git",
-                "reference": "d03863f504c8432b3de4d1881f73f6acb8c0e67c"
+                "reference": "2a4847df6047b30af28854ed9dc95304cdb56ae5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/d03863f504c8432b3de4d1881f73f6acb8c0e67c",
-                "reference": "d03863f504c8432b3de4d1881f73f6acb8c0e67c",
+                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/2a4847df6047b30af28854ed9dc95304cdb56ae5",
+                "reference": "2a4847df6047b30af28854ed9dc95304cdb56ae5",
                 "shasum": ""
             },
             "require": {
-                "php": "^7.1"
+                "php": "^7.1|^8.0"
             },
             "conflict": {
                 "phpstan/phpstan-shim": "*"
@@ -4510,6 +5830,10 @@
                 "MIT"
             ],
             "description": "PHPStan - PHP Static Analysis Tool",
+            "support": {
+                "issues": "https://github.com/phpstan/phpstan/issues",
+                "source": "https://github.com/phpstan/phpstan/tree/0.12.58"
+            },
             "funding": [
                 {
                     "url": "https://github.com/ondrejmirtes",
@@ -4524,25 +5848,25 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-07-01T11:57:52+00:00"
+            "time": "2020-11-29T13:32:03+00:00"
         },
         {
             "name": "phpstan/phpstan-doctrine",
-            "version": "0.12.17",
+            "version": "0.12.25",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpstan-doctrine.git",
-                "reference": "5eed42b2815f100f25bd45fe8c1a9b01f3e41657"
+                "reference": "1d32c427a1d8687b86f0ce5dd9a42e312e51256d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan-doctrine/zipball/5eed42b2815f100f25bd45fe8c1a9b01f3e41657",
-                "reference": "5eed42b2815f100f25bd45fe8c1a9b01f3e41657",
+                "url": "https://api.github.com/repos/phpstan/phpstan-doctrine/zipball/1d32c427a1d8687b86f0ce5dd9a42e312e51256d",
+                "reference": "1d32c427a1d8687b86f0ce5dd9a42e312e51256d",
                 "shasum": ""
             },
             "require": {
-                "php": "~7.1",
-                "phpstan/phpstan": "^0.12.26"
+                "php": "^7.1 || ^8.0",
+                "phpstan/phpstan": "^0.12.56"
             },
             "conflict": {
                 "doctrine/collections": "<1.0",
@@ -4552,21 +5876,20 @@
                 "doctrine/persistence": "<1.3"
             },
             "require-dev": {
-                "consistence/coding-standard": "^3.0.1",
-                "dealerdirect/phpcodesniffer-composer-installer": "^0.4.4",
+                "consistence/coding-standard": "^3.10",
+                "dealerdirect/phpcodesniffer-composer-installer": "^0.7.0",
                 "doctrine/collections": "^1.0",
                 "doctrine/common": "^2.7 || ^3.0",
                 "doctrine/mongodb-odm": "^1.3 || ^2.1",
                 "doctrine/orm": "^2.5",
                 "doctrine/persistence": "^1.1 || ^2.0",
-                "ergebnis/composer-normalize": "^2.0.2",
-                "jakub-onderka/php-parallel-lint": "^1.0",
                 "phing/phing": "^2.16.0",
+                "php-parallel-lint/php-parallel-lint": "^1.2",
                 "phpstan/phpstan-phpunit": "^0.12",
                 "phpstan/phpstan-strict-rules": "^0.12",
                 "phpunit/phpunit": "^7.0",
                 "ramsey/uuid-doctrine": "^1.5.0",
-                "slevomat/coding-standard": "^4.5.2"
+                "slevomat/coding-standard": "^6.4"
             },
             "type": "phpstan-extension",
             "extra": {
@@ -4590,7 +5913,11 @@
                 "MIT"
             ],
             "description": "Doctrine extensions for PHPStan",
-            "time": "2020-06-23T08:50:27+00:00"
+            "support": {
+                "issues": "https://github.com/phpstan/phpstan-doctrine/issues",
+                "source": "https://github.com/phpstan/phpstan-doctrine/tree/0.12.25"
+            },
+            "time": "2020-11-26T10:07:28+00:00"
         },
         {
             "name": "phpunit/php-code-coverage",
@@ -4653,6 +5980,11 @@
                 "testing",
                 "xunit"
             ],
+            "support": {
+                "irc": "irc://irc.freenode.net/phpunit",
+                "issues": "https://github.com/sebastianbergmann/php-code-coverage/issues",
+                "source": "https://github.com/sebastianbergmann/php-code-coverage/tree/4.0"
+            },
             "time": "2017-04-02T07:44:40+00:00"
         },
         {
@@ -4700,6 +6032,11 @@
                 "filesystem",
                 "iterator"
             ],
+            "support": {
+                "irc": "irc://irc.freenode.net/phpunit",
+                "issues": "https://github.com/sebastianbergmann/php-file-iterator/issues",
+                "source": "https://github.com/sebastianbergmann/php-file-iterator/tree/1.4.5"
+            },
             "time": "2017-11-27T13:52:08+00:00"
         },
         {
@@ -4741,6 +6078,10 @@
             "keywords": [
                 "template"
             ],
+            "support": {
+                "issues": "https://github.com/sebastianbergmann/php-text-template/issues",
+                "source": "https://github.com/sebastianbergmann/php-text-template/tree/1.2.1"
+            },
             "time": "2015-06-21T13:50:34+00:00"
         },
         {
@@ -4790,6 +6131,10 @@
             "keywords": [
                 "timer"
             ],
+            "support": {
+                "issues": "https://github.com/sebastianbergmann/php-timer/issues",
+                "source": "https://github.com/sebastianbergmann/php-timer/tree/master"
+            },
             "time": "2017-02-26T11:10:40+00:00"
         },
         {
@@ -4839,6 +6184,11 @@
             "keywords": [
                 "tokenizer"
             ],
+            "support": {
+                "issues": "https://github.com/sebastianbergmann/php-token-stream/issues",
+                "source": "https://github.com/sebastianbergmann/php-token-stream/tree/master"
+            },
+            "abandoned": true,
             "time": "2017-11-27T05:48:46+00:00"
         },
         {
@@ -4921,6 +6271,10 @@
                 "testing",
                 "xunit"
             ],
+            "support": {
+                "issues": "https://github.com/sebastianbergmann/phpunit/issues",
+                "source": "https://github.com/sebastianbergmann/phpunit/tree/5.7.27"
+            },
             "time": "2018-02-01T05:50:59+00:00"
         },
         {
@@ -4980,28 +6334,33 @@
                 "mock",
                 "xunit"
             ],
+            "support": {
+                "irc": "irc://irc.freenode.net/phpunit",
+                "issues": "https://github.com/sebastianbergmann/phpunit-mock-objects/issues",
+                "source": "https://github.com/sebastianbergmann/phpunit-mock-objects/tree/3.4"
+            },
             "abandoned": true,
             "time": "2017-06-30T09:13:00+00:00"
         },
         {
             "name": "sebastian/code-unit-reverse-lookup",
-            "version": "1.0.1",
+            "version": "1.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/code-unit-reverse-lookup.git",
-                "reference": "4419fcdb5eabb9caa61a27c7a1db532a6b55dd18"
+                "reference": "1de8cd5c010cb153fcd68b8d0f64606f523f7619"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/code-unit-reverse-lookup/zipball/4419fcdb5eabb9caa61a27c7a1db532a6b55dd18",
-                "reference": "4419fcdb5eabb9caa61a27c7a1db532a6b55dd18",
+                "url": "https://api.github.com/repos/sebastianbergmann/code-unit-reverse-lookup/zipball/1de8cd5c010cb153fcd68b8d0f64606f523f7619",
+                "reference": "1de8cd5c010cb153fcd68b8d0f64606f523f7619",
                 "shasum": ""
             },
             "require": {
-                "php": "^5.6 || ^7.0"
+                "php": ">=5.6"
             },
             "require-dev": {
-                "phpunit/phpunit": "^5.7 || ^6.0"
+                "phpunit/phpunit": "^8.5"
             },
             "type": "library",
             "extra": {
@@ -5026,7 +6385,17 @@
             ],
             "description": "Looks up which function or method a line of code belongs to",
             "homepage": "https://github.com/sebastianbergmann/code-unit-reverse-lookup/",
-            "time": "2017-03-04T06:30:41+00:00"
+            "support": {
+                "issues": "https://github.com/sebastianbergmann/code-unit-reverse-lookup/issues",
+                "source": "https://github.com/sebastianbergmann/code-unit-reverse-lookup/tree/1.0.2"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/sebastianbergmann",
+                    "type": "github"
+                }
+            ],
+            "time": "2020-11-30T08:15:22+00:00"
         },
         {
             "name": "sebastian/comparator",
@@ -5090,6 +6459,10 @@
                 "compare",
                 "equality"
             ],
+            "support": {
+                "issues": "https://github.com/sebastianbergmann/comparator/issues",
+                "source": "https://github.com/sebastianbergmann/comparator/tree/1.2"
+            },
             "time": "2017-01-29T09:50:25+00:00"
         },
         {
@@ -5142,6 +6515,10 @@
             "keywords": [
                 "diff"
             ],
+            "support": {
+                "issues": "https://github.com/sebastianbergmann/diff/issues",
+                "source": "https://github.com/sebastianbergmann/diff/tree/1.4"
+            },
             "time": "2017-05-22T07:24:03+00:00"
         },
         {
@@ -5192,6 +6569,10 @@
                 "environment",
                 "hhvm"
             ],
+            "support": {
+                "issues": "https://github.com/sebastianbergmann/environment/issues",
+                "source": "https://github.com/sebastianbergmann/environment/tree/master"
+            },
             "time": "2016-11-26T07:53:53+00:00"
         },
         {
@@ -5259,6 +6640,10 @@
                 "export",
                 "exporter"
             ],
+            "support": {
+                "issues": "https://github.com/sebastianbergmann/exporter/issues",
+                "source": "https://github.com/sebastianbergmann/exporter/tree/master"
+            },
             "time": "2016-11-19T08:54:04+00:00"
         },
         {
@@ -5310,6 +6695,10 @@
             "keywords": [
                 "global state"
             ],
+            "support": {
+                "issues": "https://github.com/sebastianbergmann/global-state/issues",
+                "source": "https://github.com/sebastianbergmann/global-state/tree/1.1.1"
+            },
             "time": "2015-10-12T03:26:01+00:00"
         },
         {
@@ -5356,6 +6745,10 @@
             ],
             "description": "Traverses array structures and object graphs to enumerate all referenced objects",
             "homepage": "https://github.com/sebastianbergmann/object-enumerator/",
+            "support": {
+                "issues": "https://github.com/sebastianbergmann/object-enumerator/issues",
+                "source": "https://github.com/sebastianbergmann/object-enumerator/tree/master"
+            },
             "time": "2017-02-18T15:18:39+00:00"
         },
         {
@@ -5409,6 +6802,10 @@
             ],
             "description": "Provides functionality to recursively process PHP variables",
             "homepage": "http://www.github.com/sebastianbergmann/recursion-context",
+            "support": {
+                "issues": "https://github.com/sebastianbergmann/recursion-context/issues",
+                "source": "https://github.com/sebastianbergmann/recursion-context/tree/master"
+            },
             "time": "2016-11-19T07:33:16+00:00"
         },
         {
@@ -5451,6 +6848,10 @@
             ],
             "description": "Provides a list of PHP built-in functions that operate on resources",
             "homepage": "https://www.github.com/sebastianbergmann/resource-operations",
+            "support": {
+                "issues": "https://github.com/sebastianbergmann/resource-operations/issues",
+                "source": "https://github.com/sebastianbergmann/resource-operations/tree/master"
+            },
             "time": "2015-07-28T20:34:47+00:00"
         },
         {
@@ -5494,20 +6895,24 @@
             ],
             "description": "Library that helps with managing the version number of Git-hosted PHP projects",
             "homepage": "https://github.com/sebastianbergmann/version",
+            "support": {
+                "issues": "https://github.com/sebastianbergmann/version/issues",
+                "source": "https://github.com/sebastianbergmann/version/tree/master"
+            },
             "time": "2016-10-03T07:35:21+00:00"
         },
         {
             "name": "squizlabs/php_codesniffer",
-            "version": "3.5.5",
+            "version": "3.5.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/squizlabs/PHP_CodeSniffer.git",
-                "reference": "73e2e7f57d958e7228fce50dc0c61f58f017f9f6"
+                "reference": "9d583721a7157ee997f235f327de038e7ea6dac4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/squizlabs/PHP_CodeSniffer/zipball/73e2e7f57d958e7228fce50dc0c61f58f017f9f6",
-                "reference": "73e2e7f57d958e7228fce50dc0c61f58f017f9f6",
+                "url": "https://api.github.com/repos/squizlabs/PHP_CodeSniffer/zipball/9d583721a7157ee997f235f327de038e7ea6dac4",
+                "reference": "9d583721a7157ee997f235f327de038e7ea6dac4",
                 "shasum": ""
             },
             "require": {
@@ -5545,20 +6950,25 @@
                 "phpcs",
                 "standards"
             ],
-            "time": "2020-04-17T01:09:41+00:00"
+            "support": {
+                "issues": "https://github.com/squizlabs/PHP_CodeSniffer/issues",
+                "source": "https://github.com/squizlabs/PHP_CodeSniffer",
+                "wiki": "https://github.com/squizlabs/PHP_CodeSniffer/wiki"
+            },
+            "time": "2020-10-23T02:01:07+00:00"
         },
         {
             "name": "symfony/yaml",
-            "version": "v4.4.10",
+            "version": "v4.4.17",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/yaml.git",
-                "reference": "c2d2cc66e892322cfcc03f8f12f8340dbd7a3f8a"
+                "reference": "7531361cf38e4816821b4a12a42542b3c6143ad1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/yaml/zipball/c2d2cc66e892322cfcc03f8f12f8340dbd7a3f8a",
-                "reference": "c2d2cc66e892322cfcc03f8f12f8340dbd7a3f8a",
+                "url": "https://api.github.com/repos/symfony/yaml/zipball/7531361cf38e4816821b4a12a42542b3c6143ad1",
+                "reference": "7531361cf38e4816821b4a12a42542b3c6143ad1",
                 "shasum": ""
             },
             "require": {
@@ -5575,11 +6985,6 @@
                 "symfony/console": "For validating YAML files using the lint command"
             },
             "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "4.4-dev"
-                }
-            },
             "autoload": {
                 "psr-4": {
                     "Symfony\\Component\\Yaml\\": ""
@@ -5604,6 +7009,9 @@
             ],
             "description": "Symfony Yaml Component",
             "homepage": "https://symfony.com",
+            "support": {
+                "source": "https://github.com/symfony/yaml/tree/v4.4.17"
+            },
             "funding": [
                 {
                     "url": "https://symfony.com/sponsor",
@@ -5618,7 +7026,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-05-20T08:37:50+00:00"
+            "time": "2020-11-24T12:28:30+00:00"
         },
         {
             "name": "webmozart/assert",
@@ -5667,6 +7075,10 @@
                 "check",
                 "validate"
             ],
+            "support": {
+                "issues": "https://github.com/webmozart/assert/issues",
+                "source": "https://github.com/webmozart/assert/tree/master"
+            },
             "time": "2020-07-08T17:02:28+00:00"
         }
     ],
@@ -5679,8 +7091,5 @@
         "php": "^7.2.0"
     },
     "platform-dev": [],
-    "platform-overrides": {
-        "ext-mongo": "1.6.16"
-    },
-    "plugin-api-version": "1.1.0"
+    "plugin-api-version": "2.0.0"
 }
