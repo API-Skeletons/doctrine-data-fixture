@@ -9,7 +9,7 @@ use Db\Fixture\DependentFixtureFactory;
 use Db\Fixture\FactoryFixture;
 use Db\Fixture\FactoryFixtureFactory;
 use Db\Fixture\StandardFixture;
-use Doctrine\DBAL\Driver\PDOSqlite\Driver;
+use Doctrine\DBAL\Driver\PDO\Sqlite\Driver;
 
 return [
     'doctrine' => [
