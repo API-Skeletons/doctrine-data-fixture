@@ -8,6 +8,7 @@ matrix:
       env:
         EXECUTE_COVERAGE=true
     - php: 7.4
+    - php: 8.0
 
 before_install:
   - if [[ $EXECUTE_COVERAGE != 'true' ]]; then phpenv config-rm xdebug.ini || return 0 ; fi
