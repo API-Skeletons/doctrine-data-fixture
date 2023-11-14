@@ -2,5 +2,9 @@ includes:
     - vendor/phpstan/phpstan-doctrine/extension.neon
 
 parameters:
+    level: 5
     fileExtensions:
         - php
+    paths:
+        - src
+    treatPhpDocTypesAsCertain: false

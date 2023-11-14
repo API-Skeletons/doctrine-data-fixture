@@ -1,0 +1,26 @@
+name: "Static analysis"
+
+on:
+  pull_request:
+    branches:
+      - "*.x"
+      - "main"
+  push:
+    branches:
+      - "*.x"
+      - "main"
+
+jobs:
+  psalm:
+    name: "Static Analysis"
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: shivammathur/setup-php@v2
+        with:
+          php-version: '7.2'
+      - uses: actions/checkout@v2
+      - name: Install Dependencies
+        run: composer install -q --no-ansi --no-interaction --no-scripts --no-progress --prefer-dist
+      - name: Execute tests (Unit and Feature tests) via PHPUnit
+        run: vendor/bin/psalm
